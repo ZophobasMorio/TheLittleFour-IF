@@ -3365,7 +3365,8 @@ A text question rule (this is the mystery climax rule):
 		say "'[italic type]Pardon[roman type]? I did not comprehend that name.'";
 		retry.
 		
-		
+
+[*** I really need a way to let the player exit this menu! (Check Questions extension...)]
 
 
 Every turn while the domestic mystery is seen and Hercule Poirot is not eveninged:
@@ -3408,9 +3409,13 @@ Every turn while the domestic mystery is seen and Hercule Poirot is not eveninge
 	now the objective is "go to bed";
 	wait for any key;
 	now the player is in Poirot Study.
-	
+
+
+[*** Is there a better way to do this than using "Every turn"?]
 	
 [	now the printed name of Hastings Bedroom is "My Bedroom (Poirot's Flat)";]
+
+[* I was initially looking for a way to change the room name itself, but in the end that wasn't necessary in this case since I restructured the story]
 
 
 Understand "my", "room", "bedroom", "my room", "bed" and "my bedroom" as the roomitem.
@@ -3445,7 +3450,7 @@ Before going from Poirot Hallway End to Poirot Bedroom when the player is evenin
 	say "I held back from entering Poirot's room, not wishing to disturb him." instead.	
 
 
-
+[*** "Before" vs. "Instead of"?]
 
 
 
@@ -3498,7 +3503,7 @@ Thomas and I shared an anticipatory glance.[line break]          >>>[command pro
 	if Thomas Hastings is morninged and the bonjour is unseen:
 		say "I could hear Poirot talking on the telephone[unicode 8212]better not to disturb him." instead.
 		  
-
+[*** Maybe I should use "scenes" for this kind of thing?]
 
 
 Before going from Poirot Hallway Mid to Poirot Dining Room:
