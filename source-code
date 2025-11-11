@@ -13,7 +13,7 @@ Release along with cover art.
 The release number is 15.
 
 Release along with a file of "Floor Plans" called "Little Four Map.png".
-[* I ended up adding all the other links manually to index.html]
+[* I ended up adding all the other links manually to index.html (I gather there's no real benefit to putting them in here?)]
 
 Use DICT_WORD_SIZE of 36.
 [*** Could there be downsides to setting it so high?]
@@ -29,9 +29,13 @@ Part 1 - Rooms
 A window is a kind of thing. Understand "win", "window", "windows", "pane", "panes", "outdoors", "out" and "outside" as a window.
 The description of a window is "[if the player is morninged]Rain harshly beat down on the window panes[unicode 8212]for once I found myself dreading my morning walk with Bob.[end if][if the player is afternooned]The storm had still not abated and the view was as dreary as ever.[end if][if the player is eveninged]The storm having finally subsided, it was now a lovely crisp evening.[end if]".
 
+[* I think the "outside" bit might be causing conflicts in some instances?]
+
 A mirror is a kind of thing. Understand "mirror", "mir" and "reflection" as the mirror.
 Before examining a mirror:
 	try examining yourself instead.
+
+[*** Starting with "Instead" wasn't always working the way I expected so I ended up using "Before" a lot throughout the game, but I'd like to learn how to stop overusing Before!]
 
 The spectacles is a thing with the printed name "pair of spectacles". Understand "spectacles", "spe", "specs", "glasses", "pair" and "eyeglasses" as the spectacles. The player is holding the spectacles.
 The spectacles is ambiguously plural.
@@ -173,6 +177,7 @@ Before examining the neckties:
 	otherwise:
 		say "I had laid out a [if the rtdesc is unseen][bold type][else][italic type][end if]red[roman type] necktie, a [if the gtdesc is unseen][bold type][else][italic type][end if]green[roman type] necktie and a [if the ptdesc is unseen][bold type][else][italic type][end if]paisley[roman type] necktie, but had not yet decided which one to wear." instead.
 
+
 The necktie is a thing with the printed name "[if the necktie is well-tied and the necktie is bamboozled]impeccably-tied [end if][if the necktie is well-tied and the necktie is semi-bamboozled]lovingly-tied [end if]necktie". Understand "tie" and "neck tie" and "neck" and "necktie" as the necktie.
 The description of the necktie is "[if the necktie is red and the player is wearing the necktie]This classic red necktie was a favourite of mine and had served me well for many years.[end if][if the necktie is green and the player is wearing the necktie]This showy green necktie was a relatively recent acquisition, and to-day was one of its very first outings.[end if][if the necktie is paisley and the player is wearing the necktie]This paisley necktie had been a gift from Poirot, before my expatriation, and added a subtle touch of flair to my outfit.[end if][if the necktie is well-tied and the player is wearing the necktie] Thanks to Poirot, it was currently in perfectly symmetrical alignment.[end if][if Hercule Poirot is wearing the necktie]My necktie was currently tucked away inside the breast pocket of Poirot's jacket.[end if]".
 
@@ -194,12 +199,10 @@ Every turn when the player is in Poirot Kitchen and Hercule Poirot is visible an
 		now Hercule Poirot is impatient.
 
 
-
-
-
-
 After printing the name of a room:
 	say "[conditional paragraph break]".
+
+
 
 
 
