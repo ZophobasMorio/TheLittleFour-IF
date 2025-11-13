@@ -383,6 +383,8 @@ The description of the p closet is "The closet currently housed the warmer winte
 
 Understand "winter clothes" as the p closet.
 
+[* I'll try to put all the "Understand" phrases together at some point!]
+
 The description of the p stand is "Aside from our overcoats, the stand bore a small assortment of hats. Poirot was fond of bowler and homburg hats[unicode 8212]I favoured fedoras, and had brought multiple Stetsons back from the Americas. Also of note were Poirot's many mufflers, which he was wont to wrap himself in at the first sign of chill.".
 
 Understand "bowler" and "fedora" and "fedoras" and "stetsons" and "homburg" and "overcoats" and "mufflers" as the p stand.
@@ -490,7 +492,9 @@ The description of the newspaper is "I religiously consulted the daily papers to
 
 Understand "stocks" and "results" and "match results" and "cricket" and "investments" and "headlines" and "daily newsmonger" and "daily blare" as the newspaper.
 
-[The description of the p study side is "(office description).".]
+[The description of the p study side is "(study description).".]
+
+[* The above was meant to allow the player to look into the study from the dining room, but it was cut for time (I did manage to put in some interactions for looking between Miss Lemon's office and the dining room, and I'll try to improve those slightly in the next release)]
 
 The description of the p table is "The table around which we gathered increasingly often as a family. Poirot had taken to inviting the children over for dinner on most nights.".
 
@@ -507,7 +511,7 @@ The description of the p bed is "Of a good size and very comfortable, like mine.
 
 Understand "bedclothes" as the p bed.
 
-The description of Cedric is "A stuffed caiman, brought as a present for Poirot during one of my visits home from South America to conduct business relating to the ranch. I shot the beast on the Orinoco, in Venezuela, and was quite proud of my feat. Poirot, despite his claims to the contrary, was perturbed by the strong chemical smell which had lingered far beyond the time frame given to me by the taxidermist. I had resigned myself to seeing old Cedric relegated to the back of a closet, but had been pleasantly surprised to find him in his place of honour on Poirot's dresser upon my return.".
+The description of Cedric is "A stuffed caiman, brought as a present for Poirot during one of my visits home from South America to conduct business relating to the ranch. I shot the beast on the Orinoco, in Venezuela, and was quite proud of my feat. Poirot, despite his claims to the contrary, was clearly perturbed by the strong chemical smell which had lingered far beyond the time frame given to me by the taxidermist. I had resigned myself to seeing old Cedric relegated to the back of a closet, but had been pleasantly surprised to find him in his place of honour on Poirot's dresser upon my return.".
 
 
 The description of the family photograph is "One of the first photographs shot with our Kodak, some time after we settled in. It shows Poirot, the children and myself[unicode 8212]along with Bob, who could not sit still and came out slightly blurred[unicode 8212]arranged around my living room with joyous expressions as we posed for the camera. The sight of the great Hercule Poirot in his shirtsleeves, a small child on each knee, never failed to amuse and gladden me!".
@@ -564,14 +568,16 @@ The description of the h spare key is "A spare key to my flat[unicode 8212]just 
 
 The description of the toy cat is "This small hand-sewn cat had been a present to Poirot from Grace, made under Miss Pearson's supervision, and sported a familiar black moustache.[paragraph break]For weeks prior, observing Poirot's fastidious grooming habits which involved meticulously fixing his whiskers and dusting every square inch of his jackets, the children had teasingly begun likening him to a 'pussycat'. He would respond with affected affront belied by a fond twinkle in his eye, which invariably only intensified the children's giggling. I could not help agreeing with their assessment[unicode 8212]my friend has always shown a distinctly feline manner and temper.[paragraph break]Grace had handed her present to Poirot bashfully, apologizing for its lopsidedness. He had thanked her profusely before declaring, in his most solemn style:[line break][italic type]'Ah, [roman type]oui[italic type], it is true; our little friend, he possesses not the symmetry, and his moustaches are of the most crooked! But do not concern yourself, [roman type]ce n'est pas grave[italic type][unicode 8212]he is only a kitten. I will teach him.'[roman type][paragraph break]Since then the little cat had been Poirot's constant companion. Whenever he needed to occupy his hands and soothe his nerves while thinking, he seemed to enjoy the challenge of attempting to balance the toy perfectly upright despite its oversized head and uneven construction.".
 
-The description of the p stu wall is "My little friend is an avid collector of art. Nowhere was this hobby more apparent than in his sitting room, whose wall bore multiple paintings in perfectly even spacing. Unsurprisingly, Poirot's tastes leant towards angles and geometric shapes, though he also had a few interesting scenes and portraits in bold colours.[paragraph break]Among the paintings hung a framed cheque for a single guinea[unicode 8212]a reward from the mundane case of an absconding cook which Poirot had initially thought beneath him, but had in the end led to the arrest of a murderer. He kept it on display to remind himself never to dismiss the commonplace or trivial.".
+The description of the p stu wall is "My little friend is an avid collector of art. Nowhere was this hobby more apparent than in his sitting room, whose walls bore multiple paintings in perfectly even spacing. Unsurprisingly, Poirot's tastes leant towards angles and geometric shapes, though he also had a few interesting scenes and portraits in bold colours.[paragraph break]Among the paintings hung a framed cheque for a single guinea[unicode 8212]a reward from the mundane case of an absconding cook which Poirot had initially thought beneath him, but had in the end led to the arrest of a murderer. He kept it on display to remind himself never to dismiss the commonplace or trivial.".
 
-Understand "paintings" and "art" and "cheque" and "Frame" and "Framed" and "framed cheque" and "shapes" and "portraits" and "guinea" as the p stu wall.
+Understand "paintings" and "art" and "cheque" and "Frame" and "Framed" and "framed cheque" and "shapes" and "portraits" and "guinea" and "walls" as the p stu wall.
 
 The description of the p wireless is "[if Hercule Poirot is in Poirot Bedroom]The wireless had been switched off for the night[else]The wireless was on, and I listened with scepticism to the weatherman predicting beautiful weather to-night[end if].".
 
 Check listening to the h wireless:
 	say "The wireless was providing some pleasant background noise." instead.
+
+[* I tried using "check" here instead of relying on "instead" - hopefully I'm using it correctly!]
 	
 Check listening to the p wireless:
 	say "[if Hercule Poirot is in Poirot Bedroom]The wireless had been switched off for the night[else]I listened with scepticism to the weatherman predicting beautiful weather to-night[end if]." instead.
@@ -663,6 +669,8 @@ To say MackLeash:
 To say MackSat:
 	now the mackintosh is satisfied.
 
+[* I only learned about this trick very late in development. It seems so unbelievably convenient!]
+
 The h closet is a thing in Hastings Entrance. Understand "closet", "small closet", and "small" as the closet.
 The h stand is a thing in Hastings Entrance with the printed name "coats and hats". Understand "coat rack", "rack", "hat stand", "stand", "hat", "hats", "coats", "coat stand", and "coat" as the h stand.
 The h door is a thing in Hastings Entrance. Understand "door", "front door", and "entrance door" as the h door.
@@ -738,6 +746,7 @@ Hastings Dining Room is west of Hastings Hallway Mid.
 The bowls is a thing in Hastings Dining Room. Understand "bowls" and "bowl" and "food bowl" and "water bowl" and "food and water" and "food and water bowls" and "food" and "water" as the bowls.
 The h table is a thing in Hastings Dining Room. Understand "table" and "dining" and "dining table" and "chair" and "chairs" as the h table.
 
+[*** I'm struggling to figure out how to format these long series of conditionals in a readable way (but without creating extra line breaks in-game!)]
 
 The children is a person in Hastings Dining Room. Understand "children" and "kids" as the children. The children is ambiguously plural.
 
@@ -1391,9 +1400,6 @@ Report helping:
 
 
 
-
-
-
 Understand the command "make" as "take".
 
 
@@ -1445,11 +1451,13 @@ Understand "taste" as a mistake ("I could only do that to something specific.").
 Understand "play" as a mistake ("Though I was in a playful mood, I decided to focus on the task at hand.").
 Understand "eat" as a mistake ("I could only do that to something specific.").
 
+[*** I added these in because the parser would get stuck in a horrible loop if the player entered certain verbs without specifying a noun (the parser would ask for clarification but not accept any answer, repeating the question endlessly until the player moves out of the room). I'd love to know if there's a better way!!]
+
 Understand "hug" as a mistake ("I wrapped my arms around myself, feeling slightly chilled.").
-[not working for some reason???]
+
+[* The hug line doesn't work for some reason!]
 
 Understand "search" as a mistake ("I could only do that to something specific.").
-
 Understand "love" and "fuck" and "bed" and "make love to" and "bugger" as a mistake ("A vague feeling of amorousness washed over me.").
 Understand "pet" as a mistake ("I could only do that to something specific.").
 Understand "talk" and "talk to" as a mistake ("I mused aloud about various thoughts and theories.").
@@ -1480,23 +1488,23 @@ Report talking to Miss Lemon:
 
 
 Report talking to Thomas Hastings:
-	say "He gave me a small smile. 'Hello, Father.'";
+	say "He gave me a small smile. 'Hello, Father.'".
 	
 
 Report talking to Grace Hastings:
-	say "She looked up with a joyous expression. 'Hello, Father!'";	
+	say "She looked up with a joyous expression. 'Hello, Father!'".
 	
 
 Report talking to Robert Hastings:
-	say "He beamed at me. 'Hello, Papa!'";	
+	say "He beamed at me. 'Hello, Papa!'".
 
 
 Report talking to Judith Hastings:
-	say "She responded with the barest hint of a smile. 'Hullo, Father.'";	
+	say "She responded with the barest hint of a smile. 'Hullo, Father.'".	
 
 
 Report talking to Bob:
-	say "He responded with great enthusiasm. 'Wuff!'";
+	say "He responded with great enthusiasm. 'Wuff!'".
 
 
 Report talking to Hercule Poirot:
@@ -1504,8 +1512,10 @@ Report talking to Hercule Poirot:
 
 Solving is an action applying to nothing. Understand "SOLVE" and "SOLVE MYSTERY" and "SOLVE THE MYSTERY" as solving.
 
+[* Cut in the current version (solving happens through talking instead)]
+
 After reading a command when the player's command matches the regular expression "\*.*":
-	say "[italic type][bracket]Thank you for your comment![close bracket][roman type]" instead.
+	say "[italic type][bracket]Thank you for your comment![close bracket][roman type][line break]" instead.
 	
 
 Before taking off something:
@@ -1522,9 +1532,11 @@ Check dropping the spectacles:
 Before taking the gramophone:
 	say "[if Hercule Poirot is in Poirot Kitchen]I contemplated putting on a record, but opted against it[unicode 8212]better to wait until after supper when Poirot and I could enjoy it together[else]Putting on a record would probably wake Poirot; I preferred not to risk it[end if]." instead;
 
+[* I defined TAKE and USE as synonyms to ensure players don't get stuck making coffee, which is why I'm using "taking" a lot here...]
+
 
 Before taking the television:
-	say "The television set was turned off for the time being, and I preferred to keep it that way.[if Hercule Poirot is eveninged] I did not want to risk waking the children[else] I liked to see the children occupy themselves fruitfully[end if]." instead.
+	say "The television set was turned off for the time being, and I preferred to keep it that way[unicode 8212][if Hercule Poirot is eveninged]I did not want to risk waking the children[else]I liked to see the children occupy themselves fruitfully[end if]." instead.
 
 
 FakeListening is an action applying to one thing.
@@ -1533,6 +1545,8 @@ Before taking the gramophone, try FakeListening the gramophone instead.
 Before taking the p wireless, try FakeListening the p wireless instead.
 Before taking the h wireless, try FakeListening the h wireless instead.
 Before taking the television, try FakeListening the television instead.
+
+[* I just realized there's some redundancy in these last few blocks of code as well as the upcoming ones! I'll trim things down so there's only one description for each. (All the device interactions were written in a rush, so I was just trying to get it to work ASAP and throwing things at the wall...)]
 
 Before playing the gramophone, try FakeListening the gramophone instead.
 
@@ -1549,9 +1563,10 @@ Before switching on:
 	if the noun is the h wireless:
 		say "[if Hercule Poirot is in Poirot Bedroom]The wireless had been switched off for the night[else] The wireless was already turned on, providing some pleasant background noise[end if]." instead;	
 	if the noun is the television:
-		say "The television set was turned off for the time being, and I preferred to keep it that way. I liked to see the children occupy themselves fruitfully." instead.	
-		
+		say "The television set was turned off for the time being, and I preferred to keep it that way[unicode 8212][if Hercule Poirot is eveninged]I did not want to risk waking the children[else]I liked to see the children occupy themselves fruitfully[end if]." instead.	
 
+
+		
 Before switching off:
 	if the noun is the coffee maker:
 		say "The espresso machine was already switched off." instead;
@@ -1562,29 +1577,34 @@ Before switching off:
 	if the noun is the h wireless:
 		say "[if Hercule Poirot is in Poirot Bedroom]The wireless had already been switched off for the night[else]I considered switching off the wireless, but decided to leave it on in case the family wanted to keep listening[end if]." instead;	
 	if the noun is the television:
-		say "The television set was already turned off, and I preferred to keep it that way for the time being. I liked to see the children occupy themselves fruitfully." instead.	
+		say "The television set was already turned off, and I preferred to keep it that way for the time being[unicode 8212]I liked to see the children occupy themselves fruitfully." instead.	
 
 Check FakeListening:
 	if the noun is the gramophone:
 		say "[if Hercule Poirot is in Poirot Kitchen]I contemplated putting on a record, but opted against it[unicode 8212]better to wait until after supper when Poirot and I could enjoy it together[else]Putting on a record would probably wake Poirot; I preferred not to risk it[end if]." instead;
 	if the noun is the p wireless:
-		say "[if Hercule Poirot is in Poirot Bedroom]The wireless had been switched off for the night[else]The wireless was on, and I listened with scepticism to the weatherman predicting beautiful weather to-night[end if]." instead;
+		say "[if Hercule Poirot is in Poirot Bedroom]The wireless had been switched off for the night; I did not wish to wake Poirot[else]The wireless was on, and I listened with scepticism to the weatherman predicting beautiful weather to-night[end if]." instead;
 	if the noun is the h wireless:
-		say "[if Hercule Poirot is in Poirot Bedroom]The wireless had been switched off for the night[else]. The wireless was currently turned on, providing some pleasant background noise[end if]." instead;	
+		say "[if Hercule Poirot is in Poirot Bedroom]The wireless had been switched off for the night[else] The wireless was currently turned on, providing some pleasant background noise[end if]." instead;	
 	if the noun is the television:
-		say "The television set was turned off for the time being, and I preferred to keep it that way.[if Hercule Poirot is eveninged] I did not want to risk waking the children[else] I liked to see the children occupy themselves fruitfully[end if]." instead.
+		say "The television set was turned off for the time being, and I preferred to keep it that way[unicode 8212][if Hercule Poirot is eveninged]I did not want to risk waking the children[else]I liked to see the children occupy themselves fruitfully[end if]." instead.
 
-[???????]
+
+
 	
 [
 Before putting something on something:
 	if the player's command includes "bob" or the player's command includes "dog" or the player's command includes "leash" or the player's command includes "":
 		if Bob is excited:
-			
+		
 		continue the action;
 	otherwise:
 		]
+
+[* To be finished later, meant to fix an issue with the player repeating PUT LEASH ON BOB]
 	
+
+[* Some larger comment blocks below, which I used as a reference to help catch as many of the standard verbs and error messages as I could, though I wasn't able to be very thorough in the end due to time constraints]
 
 [2. Standard actions concerning the actor's possessions
 Taking inventory
@@ -1723,7 +1743,7 @@ Before touching something:
 			say "I stroked Bob's soft coat." instead;
 		if the noun is yourself:
 			now the necktie is crooked;
-			say "I patted down and adjusted my own clothes." instead;
+			say "I patted down and adjusted my clothes." instead;
 		if the noun is Hercule Poirot:
 			say "Poirot, in his Continental way, has always had a noticeable tactility[unicode 8212]I found myself in a tactile mood as well, and mused that my friend must be influencing me." instead;
 		otherwise:
@@ -1776,6 +1796,8 @@ Reading is an action applying to one thing. Understand "read [something]" and "r
 
 After reading a command when the player's command matches "take all" or the player's command matches "get all":
 	say "[line break]No point in encumbering myself with unnecessary items." instead.
+
+[*** I wasn't sure if there was a better way to block the player from using the ALL noun!]
 	
 [After reading a command when the player's command matches "[command] all" and the player is wearing the necktie:
 	say "[line break]I began to unfasten my necktie, then thought better of it.";
@@ -2082,7 +2104,7 @@ Understand the command "search" as "examine".
 Rule for clarifying the parser's choice: do nothing.
 
 Before searching something:
-	Try examining the noun instead.
+	try examining the noun instead.
 
 
 Before taking the p stand:
@@ -2101,6 +2123,8 @@ The description of the pullover is "A patterned red-and-beige pullover; an old f
 
 The mackintosh is a backdrop. Understand "mackintosh", "coat", "mack" and "mac" as the mackintosh. The mackintosh is everywhere.
 The umbrella is a backdrop. Understand "umb", "umbrella" and "brella" as the umbrella. The umbrella is everywhere.
+
+[* I wanted the mackintosh, umbrella and pullover to be examinable everywhere, but didn't know how to hide them from the player's inventory, so they became backdrops...]
 
 The description of the mackintosh is "A coat I liked to keep in my flat for walks like these.".
 The description of the umbrella is "A plain black umbrella; essential on days like to-day.".
@@ -2204,6 +2228,8 @@ To say RestoreRoom:
 [First after reading a command:
 	let vCmd be "[the player's command in lower case]";
 	change the text of the player's command to vCmd.]
+
+[* I think this is a potential fix I'd explored for the problem of the Questions extension being case-sensitive, but it was resolved a different way in the end]
 	
 Playing is an action applying to one thing. Understand "play [something]" and "play with [something]" as playing.
 Carry out playing:
@@ -2302,7 +2328,7 @@ Before going north in Floor 3 Hall:
 Before going inside in Floor 3 Hall:
 	if Bob is leashed, say "While Bob and Poirot got along splendidly, Poirot is very particular about keeping his space clean[unicode 8212]even a well-groomed and well-behaved dog would inevitably shed all over his belongings." instead.
 
-[*** I wasn't sure if there was a better way to accomplish this! (Letting the player use either NORTH or INSIDE to enter)]
+[*** I wasn't sure if there was a better way to accomplish this (letting the player use either NORTH or INSIDE to enter)! It worked well as far as I can tell, but it was a pain to have to duplicate every interaction like this]
 
 After reading a command, say "[conditional paragraph break]".
 
@@ -2322,6 +2348,7 @@ Before going south in Poirot Entrance:
 
 [Understand "bob" and "bob's ball" as the ball if Bob is not visible.]
 
+[*** I've heard there's a way to accomplish something like this, I think I just don't have the right syntax yet (the goal was to avoid disambiguation when Bob himself is around)]
 
 After reading a command:
 	if the player's command matches "x" or the player's command matches "examine":
@@ -2335,10 +2362,14 @@ After reading a command:
 			try reading the familiar book instead;
 		otherwise:
 			say "I could only do that to something with text." instead.
+
+[*** I wonder if there's a better way to catch and redirect nounless verbs?]
 			
 
 Before opening the familiar book:
 	try reading the familiar book instead.
+
+[* I'm realizing now that I should probably have created a property for readable objects, and redirected them from OPEN to READ as a group instead of doing it like this!]
 
 After reading a command:
 	if the player's command matches "put leash on bob" or the player's command matches "put leash on dog":
