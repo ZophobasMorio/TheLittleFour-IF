@@ -1,6 +1,6 @@
 "The Little Four" by Captain Arthur Hastings, O[dot]B[dot]E[dot]
 
-[* This is the state of the code as of November 2nd! It's messy and inefficient, but I'm hoping to reorganize and clean it up in the coming months as I work on an improved post-comp release.]
+[* This is the state of the code as of November 13th! It's messy and inefficient, but I'm hoping to reorganize and clean it up in the coming months as I work on an improved post-comp release.]
 
 Include Basic Screen Effects by Emily Short.
 Include Questions by Michael Callaghan.
@@ -29,13 +29,15 @@ Part 1 - Rooms
 A window is a kind of thing. Understand "win", "window", "windows", "pane", "panes", "outdoors", "out" and "outside" as a window.
 The description of a window is "[if the player is morninged]Rain harshly beat down on the window panes[unicode 8212]for once I found myself dreading my morning walk with Bob.[end if][if the player is afternooned]The storm had still not abated and the view was as dreary as ever.[end if][if the player is eveninged]The storm having finally subsided, it was now a lovely crisp evening.[end if]".
 
-[* I think the "outside" bit might be causing conflicts in some instances?]
+[* I think the "outside" bit might be causing conflicts in some instances, since it gets interpreted as the direction?]
+
+[*** Also, I put the window all the way up here because the code was refusing to compile if I put it after the rooms...]
 
 A mirror is a kind of thing. Understand "mirror", "mir" and "reflection" as the mirror.
 Before examining a mirror:
 	try examining yourself instead.
 
-[*** Starting with "Instead" wasn't always working the way I expected so I ended up using "Before" a lot throughout the game, but I'd like to learn how to stop overusing Before!]
+[*** Starting with "Instead" wasn't always working the way I expected so I ended up using "Before" a lot throughout the game, but I'd like to learn how to stop overusing Before! I think all the Befores have been causing problems with UNDO...]
 
 The spectacles is a thing with the printed name "pair of spectacles". Understand "spectacles", "spe", "specs", "glasses", "pair" and "eyeglasses" as the spectacles. The player is holding the spectacles.
 The spectacles is ambiguously plural.
@@ -383,7 +385,7 @@ The description of the p closet is "The closet currently housed the warmer winte
 
 Understand "winter clothes" as the p closet.
 
-[* I'll try to put all the "Understand" phrases together at some point!]
+[* I'll try to put all the "Understand" phrases together once I understand better how I should order things!]
 
 The description of the p stand is "Aside from our overcoats, the stand bore a small assortment of hats. Poirot was fond of bowler and homburg hats[unicode 8212]I favoured fedoras, and had brought multiple Stetsons back from the Americas. Also of note were Poirot's many mufflers, which he was wont to wrap himself in at the first sign of chill.".
 
@@ -577,7 +579,7 @@ The description of the p wireless is "[if Hercule Poirot is in Poirot Bedroom]Th
 Check listening to the h wireless:
 	say "The wireless was providing some pleasant background noise." instead.
 
-[* I tried using "check" here instead of relying on "instead" - hopefully I'm using it correctly!]
+[* I tried using "Check" here instead of relying on "Instead" - hopefully I'm using it correctly!]
 	
 Check listening to the p wireless:
 	say "[if Hercule Poirot is in Poirot Bedroom]The wireless had been switched off for the night[else]I listened with scepticism to the weatherman predicting beautiful weather to-night[end if]." instead.
@@ -669,7 +671,7 @@ To say MackLeash:
 To say MackSat:
 	now the mackintosh is satisfied.
 
-[* I only learned about this trick very late in development. It seems so unbelievably convenient!]
+[*** I only learned about this trick very late in development; it seems so unbelievably convenient!! I'll try to use it a lot more going forward (unless that's not recommended for whatever reason?)]
 
 The h closet is a thing in Hastings Entrance. Understand "closet", "small closet", and "small" as the closet.
 The h stand is a thing in Hastings Entrance with the printed name "coats and hats". Understand "coat rack", "rack", "hat stand", "stand", "hat", "hats", "coats", "coat stand", and "coat" as the h stand.
@@ -1451,7 +1453,7 @@ Understand "taste" as a mistake ("I could only do that to something specific.").
 Understand "play" as a mistake ("Though I was in a playful mood, I decided to focus on the task at hand.").
 Understand "eat" as a mistake ("I could only do that to something specific.").
 
-[*** I added these in because the parser would get stuck in a horrible loop if the player entered certain verbs without specifying a noun (the parser would ask for clarification but not accept any answer, repeating the question endlessly until the player moves out of the room). I'd love to know if there's a better way!!]
+[*** I added these in because the parser would get stuck in a horrible loop if the player entered certain verbs without specifying a noun (the parser would ask for clarification but not accept any answer, repeating the question endlessly until the player moves out of the room)!]
 
 Understand "hug" as a mistake ("I wrapped my arms around myself, feeling slightly chilled.").
 
@@ -1512,7 +1514,7 @@ Report talking to Hercule Poirot:
 
 Solving is an action applying to nothing. Understand "SOLVE" and "SOLVE MYSTERY" and "SOLVE THE MYSTERY" as solving.
 
-[* Cut in the current version (solving happens through talking instead)]
+[* Unused in the current version (solving happens through talking instead)]
 
 After reading a command when the player's command matches the regular expression "\*.*":
 	say "[italic type][bracket]Thank you for your comment![close bracket][roman type][line break]" instead.
@@ -1532,7 +1534,7 @@ Check dropping the spectacles:
 Before taking the gramophone:
 	say "[if Hercule Poirot is in Poirot Kitchen]I contemplated putting on a record, but opted against it[unicode 8212]better to wait until after supper when Poirot and I could enjoy it together[else]Putting on a record would probably wake Poirot; I preferred not to risk it[end if]." instead;
 
-[* I defined TAKE and USE as synonyms to ensure players don't get stuck making coffee, which is why I'm using "taking" a lot here...]
+[* I defined TAKE and USE as synonyms to ensure players never get stuck making coffee, which is why I'm using "taking" a lot here...]
 
 
 Before taking the television:
@@ -1601,10 +1603,10 @@ Before putting something on something:
 	otherwise:
 		]
 
-[* To be finished later, meant to fix an issue with the player repeating PUT LEASH ON BOB]
+[* To be finished later; meant to fix an issue with the player repeating PUT LEASH ON BOB]
 	
 
-[* Some larger comment blocks below, which I used as a reference to help catch as many of the standard verbs and error messages as I could, though I wasn't able to be very thorough in the end due to time constraints]
+[* Some longer comment blocks in this second half of the code, which I used as a reference to help catch as many of the standard verbs and error messages as I could, though I wasn't able to be very thorough in the end due to time constraints]
 
 [2. Standard actions concerning the actor's possessions
 Taking inventory
@@ -2229,7 +2231,7 @@ To say RestoreRoom:
 	let vCmd be "[the player's command in lower case]";
 	change the text of the player's command to vCmd.]
 
-[* I think this is a potential fix I'd explored for the problem of the Questions extension being case-sensitive, but it was resolved a different way in the end]
+[* I think this was a potential fix I'd explored for the problem of the Questions extension being case-sensitive, but it was resolved a different way in the end]
 	
 Playing is an action applying to one thing. Understand "play [something]" and "play with [something]" as playing.
 Carry out playing:
@@ -2348,7 +2350,7 @@ Before going south in Poirot Entrance:
 
 [Understand "bob" and "bob's ball" as the ball if Bob is not visible.]
 
-[*** I've heard there's a way to accomplish something like this, I think I just don't have the right syntax yet (the goal was to avoid disambiguation when Bob himself is around)]
+[*** I've heard there's a way to accomplish something like this, I think I just don't have the right syntax yet (the goal was to avoid disambiguation problems when Bob himself is around)]
 
 After reading a command:
 	if the player's command matches "x" or the player's command matches "examine":
@@ -2363,13 +2365,13 @@ After reading a command:
 		otherwise:
 			say "I could only do that to something with text." instead.
 
-[*** I wonder if there's a better way to catch and redirect nounless verbs?]
+[*** Is this considered an OK way to catch and redirect nounless verbs?]
 			
 
 Before opening the familiar book:
 	try reading the familiar book instead.
 
-[* I'm realizing now that I should probably have created a property for readable objects, and redirected them from OPEN to READ as a group instead of doing it like this!]
+[* I'm realizing now that I should probably have created a property for readable objects, and redirected them from OPEN to READ as a group instead of doing it like this! I'll try to plan out that kind of thing going forward]
 
 After reading a command:
 	if the player's command matches "put leash on bob" or the player's command matches "put leash on dog":
@@ -2668,6 +2670,8 @@ The clue is a thing.
 Before thinkabouting:
 	say "I tried to appeal to my little grey cells, but they did not offer me much insight." instead.]
 
+[*** I couldn't figure out how to get THINK ABOUT to be applicable to objects not in the room! I tried it with and without "visible", and experimented with other phrasings too, but nothing seemed to work]
+
 Every turn while the clue is not satisfied and the p bookshelf is examined and the object count is at least 20:
 	if the player is in Hastings Bedroom or the player is in Poirot Bathroom or the player is in Poirot Bedroom or the player is not herculed:
 		now the clue is satisfied;
@@ -2681,7 +2685,8 @@ After going from Hastings Dining Room to Hastings Study:
 After going from Hastings Hallway End to Hastings Study:
 	now the Monopoly is satisfied;
 	continue the action.
-		
+
+[*** I think I've been using "continue the action" a bit haphazardly; I'm not sure what the best practice is]
 
 Carry out talking to the housekeeper:
 	if the housekeeper is excited:
@@ -2751,6 +2756,8 @@ Instead of going south in Hastings Entrance:
 
 Instead of going north in Floor 2 Hall:
 	now the player is in Hastings Entrance.
+
+[* Once again, the issue of wanting to access a room from two different directions! I didn't want the N and S connections to appear in the status bar or the "invalid direction" message which lists current exits (since they would have been redundant and potentially confusing), I just wanted them to be quietly available in case players prefer them to IN/OUT]
 
 Instead of going north in Lemon Office:
 	say "I tried not to make a habit of climbing through windows[unicode 8212]except whenever Poirot and I needed to infiltrate a suspect's dwelling.".
@@ -2858,15 +2865,16 @@ Rule for printing a parser error when the latest parser error is the aren't hold
 Rule for printing a parser error when the latest parser error is the can't see any such thing error or the latest parser error is the can't see it at the moment error or the latest parser error is the not something you need to refer to error:
 	say "That was not in my field of view[unicode 8212]or if it was, it did not hold my attention." instead.
 	
-Every turn while the player is in the Hastings Entrance:
+Every turn while the player is in Hastings Entrance:
 	now the player is arthured.
 	
-Every turn while the player is in the Floor 1 Hall or the player is in the Floor 2 Hall or the player is in the Floor 3 Hall:
+Every turn while the player is in Floor 1 Hall or the player is in Floor 2 Hall or the player is in Floor 3 Hall:
 	now the player is bobbed.
 	
-Every turn while the player is in the Poirot Entrance or the player is in the Poirot Kitchen:
+Every turn while the player is in Poirot Entrance or the player is in Poirot Kitchen:
 	now the player is herculed.
 
+[* The Kitchen bit was because the player could originally teleport to Poirot to give him an answer to the mystery - I'll be reworking some of those leftovers soon]
 
 [Pranding is an action applying to nothing. Understand "prand" as pranding.
 	Carry out pranding:
@@ -2962,7 +2970,7 @@ Before taking the necktie:
 		say "I took my necktie in hand, adjusting it.";
 		now the necktie is crooked instead;
 	if Hercule Poirot is wearing the necktie:
-		say "I could see my necktie peeking out of Poirot's breast pocket, but dared not reach for it." instead;
+		say "I could see my necktie peeking out of Poirot's breast pocket, but dared not reach for it." instead.
 		
 
 
@@ -2998,11 +3006,12 @@ Check taking something (called the item):
 		otherwise:
 			continue the action.
 
-Definition: a direction (called thataway) is viable if the room 
-thataway from the location is a room.
+Definition: a direction (called thataway) is viable if the room thataway from the location is a room.
 
 Instead of going nowhere:
 	say "This room's exits are [list of viable directions].".
+
+[*** I'm not sure how to check how many directions there are so that I can automatically adjust the singular/plural of "exits"! I considered making a separate singular version of the message for every room which I know has only one exit, but I wonder if there's a better way.]
 	
 To say exit list:
 	let place be location;
@@ -3112,6 +3121,8 @@ The heart is a thing.
 	let RoomSub be "[dynamic name of the roomitem]" in lower case; 
 	say "[RoomSub]". ]
 
+[* Some remnants of code from when I was trying to change the room name itself...]
+
 To say dynamic name of (object - an object):
 	if the object is unexamined:
 		say "[bold type][printed name of object][roman type]";
@@ -3153,9 +3164,6 @@ When play begins:
 	continue the action.
 	
 The intro is a thing in the Park.
-
-
-[After going ]
 
 	
 
@@ -3400,7 +3408,7 @@ A text question rule (this is the mystery climax rule):
 		retry.
 		
 
-[*** I really need a way to let the player exit this menu! (Check Questions extension...)]
+[* I really need to find a way to let the player exit this menu (and also prevent the question mode from blocking meta commands like SAVE/RESTORE), but I haven't fully wrapped my head around the Questions extension yet!]
 
 
 Every turn while the domestic mystery is seen and Hercule Poirot is not eveninged:
@@ -3445,12 +3453,9 @@ Every turn while the domestic mystery is seen and Hercule Poirot is not eveninge
 	now the player is in Poirot Study.
 
 
-[*** Is there a better way to do this than using "Every turn"?]
+[*** Is it ever problematic to use "Every turn" for these kinds of things? I'm wondering if there could be unintended interactions, or if having too many "Every turn" checks at once can slow things down!]
 	
 [	now the printed name of Hastings Bedroom is "My Bedroom (Poirot's Flat)";]
-
-[* I was initially looking for a way to change the room name itself, but in the end that wasn't necessary in this case since I restructured the story]
-
 
 Understand "my", "room", "bedroom", "my room", "bed" and "my bedroom" as the roomitem.
 
@@ -3483,8 +3488,6 @@ Before going from Poirot Bathroom to Poirot Bedroom when the player is eveninged
 Before going from Poirot Hallway End to Poirot Bedroom when the player is eveninged:
 	say "I held back from entering Poirot's room, not wishing to disturb him." instead.	
 
-
-[*** "Before" vs. "Instead of"?]
 
 
 
@@ -3537,7 +3540,7 @@ Thomas and I shared an anticipatory glance.[line break]          >>>[command pro
 	if Thomas Hastings is morninged and the bonjour is unseen:
 		say "I could hear Poirot talking on the telephone[unicode 8212]better not to disturb him." instead.
 		  
-[*** Maybe I should use "scenes" for this kind of thing?]
+[*** Maybe I should use "scenes" for these kinds of big transition?]
 
 
 Before going from Poirot Hallway Mid to Poirot Dining Room:
