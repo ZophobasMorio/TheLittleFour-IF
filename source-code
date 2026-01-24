@@ -1,15 +1,5 @@
 
-
-
-[*** Three asterisks: questions and concerns which I'd especially like Zed's input on]
-
-[* One asterisk: miscellaneous comments, explanations and potential issues]
-
-
-
 "The Little Four" by Captain Arthur Hastings, O[dot]B[dot]E[dot]
-
-[* This is the state of the code as of November 13th! It's messy and inefficient, but I'm hoping to reorganize and clean it up in the coming months as I work on an improved post-comp release.]
 
 Include Basic Screen Effects by Emily Short.
 Include Questions by Michael Callaghan.
@@ -25,7 +15,6 @@ Release along with a file of "Floor Plans" called "Little Four Map.png".
 [* I ended up adding all the other links manually to index.html (I gather there's no real benefit to putting them in here?)]
 
 Use DICT_WORD_SIZE of 36.
-[*** Could there be downsides to setting it so high?]
 
 [Note to self: Volume, Book, Part, Chapter, Section]
 
@@ -39,8 +28,6 @@ A window is a kind of thing. Understand "win", "window", "windows", "pane", "pan
 The description of a window is "[if the player is morninged]Rain harshly beat down on the window panes[unicode 8212]for once I found myself dreading my morning walk with Bob.[end if][if the player is afternooned]The storm had still not abated and the view was as dreary as ever.[end if][if the player is eveninged]The storm having finally subsided, it was now a lovely crisp evening.[end if]".
 
 [* I think the "outside" bit might be causing conflicts in some instances, since it gets interpreted as the direction?]
-
-[*** Also, I put the window all the way up here because the code was refusing to compile if I put it after the rooms...]
 
 A mirror is a kind of thing. Understand "mirror", "mir" and "reflection" as the mirror.
 Before examining a mirror:
