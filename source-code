@@ -2130,6 +2130,7 @@ The description of the umbrella is "A plain black umbrella; essential on days li
 Does the player mean doing something to the p stand: it is very likely.
 Does the player mean doing something to the h stand: it is very likely.
 Does the player mean doing something to the coffee maker: it is very likely.
+Does the player mean doing something to Hercule Poirot: it is very likely.
 
 
 
@@ -2312,7 +2313,7 @@ Check dropping the leash:
 	if Bob is leashed:
 		say "The leash nearly slipped out of my hand, but I tightened my grip." instead;
 	otherwise:
-		say "That was not in my possession.".
+		say "That was not in my possession." instead.
 		
 Check dropping something:
 	if the noun is not the leash and the noun is not the necktie and the noun is not the spectacles and the noun is not the wrist-watch:
