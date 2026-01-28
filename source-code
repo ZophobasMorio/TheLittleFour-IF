@@ -9,7 +9,7 @@ Release along with a website.
 Release along with an interpreter.
 Release along with cover art.
 
-The release number is 15.
+The release number is 16.
 
 Release along with a file of "Floor Plans" called "Little Four Map.png".
 [* I ended up adding all the other links manually to index.html (I gather there's no real benefit to putting them in here?)]
@@ -24,8 +24,11 @@ Book 1 - Poirot's Flat
 
 Part 1 - Rooms
 
-A window is a kind of thing. Understand "win", "window", "windows", "pane", "panes", "outdoors", "out" and "outside" as a window.
+A window is a kind of thing. Understand "win", "window", "the window", "windows", "pane", "panes", "outdoors", "out" and "outside" as a window.
 The description of a window is "[if the player is morninged]Rain harshly beat down on the window panes[unicode 8212]for once I found myself dreading my morning walk with Bob.[end if][if the player is afternooned]The storm had still not abated and the view was as dreary as ever.[end if][if the player is eveninged]The storm having finally subsided, it was now a lovely crisp evening.[end if]".
+
+Before opening a window:
+	say "[if the player is eveninged]Though I usually relished the opportunity for fresh air, I thought it best to leave the evening chill outdoors for the time being.[else]I am usually fond of leaving windows open[unicode 8212]to the occasional despair of Poirot, who bundles up at the merest suggestion of a cold draught[unicode 8212]but I would not go so far as to admit rain into our living space![end if]" instead.
 
 [* I think the "outside" bit might be causing conflicts in some instances, since it gets interpreted as the direction?]
 
@@ -691,6 +694,7 @@ Hastings Kitchen is east of Hastings Entrance.
 
 The housekeeper is a female person with the printed name "Miss Pearson". The housekeeper is in Hastings Kitchen.
 Understand "house", "keeper", "mis", "housekeeper", "pearson", "pea", "pear", "miss pearson", "miss", "annie pearson" and "annie" as the housekeeper.
+The housekeeper is proper-named.
 The h apron is a thing in Hastings Kitchen with the printed name "apron". Understand "apron" and "hook" as the h apron.
 The h cabinets is a thing in Hastings Kitchen. Understand "cabinets" and "sturdy" and "cabinet" and "cupboards" as the cabinets.
 The dishes is a thing in Hastings Kitchen. Understand "dishes" and "plates" and "dish" and "sink" and "basin" and "washbasin" and "wash basin" and "sin" as the dishes.
@@ -932,7 +936,7 @@ The description of the familiar book is "[one of]On giving the book a second gla
 The description of the stuffed rabbit is "Robert's beloved stuffed animal, modeled after Peter Rabbit. It worried me to see him hold onto a toy like this at his age, but I continually reminded myself of Cinderella's advice not to be an overbearing parent, and tried to trust that I was bringing him up adequately enough already.".
 
 
-The description of the model ships is "Robert's love of little army-men was only outmatched by his passion for ships of all kinds. In the corner of the room was the jewel of his collection[unicode 8212]a magnificient miniature sailboat, with a mast nearly as tall as I am, which Poirot and I had purchased on my sudden fancy to float a ship around park ponds as a summer pastime.  I had sadly not been able to bring it with me to the Argentine and was glad to find that my friend had kept it. The ship was still sometimes taken out for a bit of sailing, but it typically served a more decorative purpose nowadays.".
+The description of the model ships is "Robert's love of little army-men was only outmatched by his passion for ships of all kinds. In a corner of the room was the jewel of his collection[unicode 8212]a magnificent miniature sailboat, with a mast nearly as tall as I am, which Poirot and I had purchased on my sudden fancy to float a ship around park ponds as a summer pastime.  Having sadly not been able to bring it with me to the Argentine, I had been glad to find that my friend had kept it. The boat was still sometimes taken out for a bit of sailing, but it typically served a more decorative purpose nowadays.".
  
 
 Chapter 9 - Hastings Study
@@ -2383,11 +2387,11 @@ Check reading:
 	if the noun is the file folder:
 		say "I delicately opened the file folder to find three small stacks of papers.
 
-Drawings from the children[unicode 8212]crudely-drawn portraits of Poirot with outsized moustaches, abstract pieces appealing to his zealous love of squares, and one surprisingly competent sketch of the two of us apprehending a murderer[unicode 8212]
+Drawings from the children[unicode 8212]crudely-drawn portraits of Poirot with outsized moustaches, abstract pieces appealing to his zealous love of squares, one surprisingly competent sketch of the two of us apprehending a murderer[unicode 8212]
 
 Advance inquiries made to prestigious institutions[unicode 8212]the Curie Institute in Paris, the Naval College at Dartmouth[unicode 8212]
 
-[if Hercule Poirot is unclaimed]On the third one I read the words 'Last Will and Testament'. I was shocked into a sudden sense of gravity. Though I knew Poirot had named me his executor, and he was also mine, I had never pried into his exact intentions. Despite myself I found my eyes drifting down the page[unicode 8212]provisions made for our employees[unicode 8212]inheritance distributed among our family, save for a smaller portion to be sent back to Belgium[unicode 8212]specific bequests for the children; his pocket-watch to Thomas, his cast-iron cookware to Grace...[else]I passed over the will[unicode 8212]I could not bring myself to contemplate it any further, for now.[end if]
+[if Hercule Poirot is unclaimed]On the third one I read the words 'Last Will and Testament'. I was shocked into a sudden sense of gravity. Though I knew Poirot had named me his executor, and he was also mine, I had never pried into his exact intentions. Despite myself I found my eyes drifting down the page[unicode 8212]provisions made for our employees[unicode 8212]inheritance distributed among our family, save for a smaller portion to be sent back to Belgium[unicode 8212]specific bequests for the children: his pocket-watch to Thomas, his cast-iron cookware to Grace...[else]I passed over the will[unicode 8212]I could not bring myself to contemplate it any further, for now.[end if]
 
 [if Hercule Poirot is unclaimed]I looked away, overcome. When Poirot had resorted to faking his own death in our battle with that international crime syndicate known as the Big Four, it had felt as though a good part of me died with him; many years later, I still could hardly bear to recall those torturous months I spent attempting to avenge him at any cost. The prospect of an even greater and more permanent loss was intolerable. Taking a deep breath to compose myself, [else]Holding back my emotions, [end if]I closed the folder and carefully replaced it where it had been.";
 		now Hercule Poirot is claimed instead; 
