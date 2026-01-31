@@ -2671,7 +2671,6 @@ The clue is a thing.
 Before thinkabouting:
 	say "I tried to appeal to my little grey cells, but they did not offer me much insight." instead.]
 
-[*** I couldn't figure out how to get THINK ABOUT to be applicable to objects not in the room! I tried it with and without "visible", and experimented with other phrasings too, but nothing seemed to work]
 
 Every turn while the clue is not satisfied and the p bookshelf is examined and the object count is at least 20:
 	if the player is in Hastings Bedroom or the player is in Poirot Bathroom or the player is in Poirot Bedroom or the player is not herculed:
@@ -3455,8 +3454,6 @@ Every turn while the domestic mystery is seen and Hercule Poirot is not eveninge
 	wait for any key;
 	now the player is in Poirot Study.
 
-
-[*** Is it ever problematic to use "Every turn" for these kinds of things? I'm wondering if there could be unintended interactions, or if having too many "Every turn" checks at once can slow things down!]
 	
 [	now the printed name of Hastings Bedroom is "My Bedroom (Poirot's Flat)";]
 
