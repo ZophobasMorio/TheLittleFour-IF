@@ -12,11 +12,8 @@ Release along with cover art.
 The release number is 16.
 
 Release along with a file of "Floor Plans" called "Little Four Map.png".
-[* I ended up adding all the other links manually to index.html (I gather there's no real benefit to putting them in here?)]
 
 Use DICT_WORD_SIZE of 36.
-
-[Note to self: Volume, Book, Part, Chapter, Section]
 
 Volume 1 - In-World
 
@@ -30,13 +27,9 @@ The description of a window is "[if the player is morninged]Rain harshly beat do
 Before opening a window:
 	say "[if the player is eveninged]Though I usually relished the opportunity for fresh air, I thought it best to leave the evening chill outdoors for the time being.[else]I am usually fond of leaving windows open[unicode 8212]to the occasional despair of Poirot, who bundles up at the merest suggestion of a cold draught[unicode 8212]but I would not go so far as to admit rain into our living space![end if]" instead.
 
-[* I think the "outside" bit might be causing conflicts in some instances, since it gets interpreted as the direction?]
-
 A mirror is a kind of thing. Understand "mirror", "mir" and "reflection" as the mirror.
 Before examining a mirror:
 	try examining yourself instead.
-
-[*** Starting with "Instead" wasn't always working the way I expected so I ended up using "Before" a lot throughout the game, but I'd like to learn how to stop overusing Before! I think all the Befores have been causing problems with UNDO...]
 
 The spectacles is a thing with the printed name "pair of spectacles". Understand "spectacles", "spe", "specs", "glasses", "pair" and "eyeglasses" as the spectacles. The player is holding the spectacles.
 The spectacles is ambiguously plural.
@@ -97,7 +90,7 @@ Hastings Bedroom is a room with the printed name "The Guest Bedroom (Poirot's Fl
 
 [only]I had been occupying Poirot’s guest bedroom since my return two years prior. My collection of [dynamic name of the mementos] were hung and strewn all about. In front of the window stood a modest [dynamic name of the writing desk], bearing a [dynamic name of the notebook] and a [dynamic name of the car guide]. The wardrobe and mirror were placed nearby. Prominently displayed on the sideboard next to my [dynamic name of the h bed] was a [dynamic name of the h picture of Cinderella].
 
-From here I could go [italic type]north[roman type] to the bathroom I share with Poirot, or go [italic type]west[roman type] to the flat's hallway.[if the player is not wearing the necktie and the necktie is bamboozled][paragraph break]Having [one of]just[or]already[stopping] buttoned my shirt and slipped on a patterned sleeveless pullover, I was now almost ready to leave the room[unicode 8212]all that was left was to don one of the three [dynamic name of the neckties] I had laid out.[end if][first time][line break][line break][italic type][bracket]If you need assistance navigating an interactive story, you may type HELP at any time. For more information and advice about this specific work, type ABOUT.[line break]A basic overview of the story's current state can be found at the top of the screen[unicode 8212]there is also an external help guide available (in the downloadable folder or on the IFComp entry page) if you ever feel stuck.[line break]To simply consult a list of useable commands, type COMMANDS.[close bracket][roman type][only]".
+From here I could go [italic type]north[roman type] to the bathroom I share with Poirot, or go [italic type]west[roman type] to the flat's hallway.[if the player is not wearing the necktie and the necktie is bamboozled][paragraph break]Having [one of]just[or]already[stopping] buttoned my shirt and slipped on a patterned sleeveless pullover, I was now almost ready to leave the room[unicode 8212]all that was left was to don one of the three [dynamic name of the neckties] I had laid out.[end if][first time][line break][line break][italic type][bracket]If you need assistance navigating an interactive story, you may type HELP at any time. For information and advice about this specific work, type ABOUT. To simply consult a list of useable commands, type COMMANDS.[line break]A basic overview of the story's current state can be found at the top of the screen[unicode 8212]there is also an external help guide available (accessible from the home page) if you ever feel stuck.[line break]To view a list of the wonderful people whose contributions greatly helped to improve this story, type CREDITS.[close bracket][roman type][only]".
 Hastings Bedroom is east of Poirot Hallway Mid.
 The player is in Hastings Bedroom.
 The h wardrobe is an openable closed container in Hastings Bedroom with the printed name "wardrobe". Understand "wardrobe" and "closet" as the wardrobe.
@@ -404,7 +397,7 @@ Chapter 2 - Poirot Kitchen
 
 The description of the p apron is "I have always known Poirot to be a masterful cook; lately, he had been honing his skills with particular zeal by cooking dinner on most nights, and appeared determined to outdo himself at every opportunity. He was on a mission to render even the most dubious of Belgian dishes somehow palatable to young children. He sometimes spoke fondly of his mother as he explained a recipe's origins, offering us glimpses into a past which he had been reticent about for as long as I have known him.".
 
-The description of the p cabinets is "Poirot's cabinets contained all manner of fine glassware and china, and the pantries held enough ingredients to feed a small army. Everything was sorted impeccably according to Poirot's very particular logic.".
+The description of the p cabinets is "Poirot's cabinets contained all manner of fine glassware and china, and the pantry held enough ingredients to feed a small army. Everything was sorted impeccably according to Poirot's very particular logic.".
 
 Understand "china", "glassware" and "ingredients" as the p cabinets.
 
@@ -921,7 +914,7 @@ The description of the b beds is "Although Miss Pearson was available and willin
 The description of the b dresser is "On the dresser was a [dynamic name of the stuffed rabbit] sitting atop a [dynamic name of the familiar book].".
 
 
-The description of the b picture of Cinderella is "One recurring point of concern for my late wife and myself had been Robert's innocence and tenderness of feeling. While Thomas has often shown an admirable placidity and stiff-upper-lip despite his underlying earnestness, his little brother could seldom mask his emotions and consistently failed to develop any real sense of stoicism. I had myself once been a somewhat sensitive child but had quickly grown out of it, and hoped to see Robert do the same. Poirot recurringly offered me dubious compliments alluding to my supposedly transparent and 'beautiful' nature[unicode 8212]even Cinders had traitorously agreed with him at one point[unicode 8212]ridiculous and exaggerated perceptions!".
+The description of the b picture of Cinderella is "One recurring point of concern for my late wife and myself had been Robert's innocence and tenderness of feeling. While Thomas often displayed admirable placidity and stiff-upper-lip despite his underlying earnestness, his little brother could seldom mask his emotions and struggled to develop any real sense of stoicism. I had myself been a somewhat sensitive child but had quickly outgrown it, and hoped to see Robert do the same. Yet Poirot frequently offered dubious compliments alluding to my supposedly transparent and 'beautiful' nature, and even Cinders had once traitorously agreed with his preposterous claims!".
 
 
 The description of the b supplies is "Robert made up his mind very early on about a career in the Royal Navy and was already champing at the bit as he waited to come of age. He admired the heroics of my younger days and the active role that I had played in bringing down several fearsome opponents. While it pleased me greatly to be looked up to, I will candidly confess that I did not think myself truly worthy of it. I had once led my men into battle with pride[unicode 8212]and even now could still muster up the requisite courage to face most varieties of danger[unicode 8212]but I had developed a sort of cowardly attitude towards military combat which saddened me deeply. I had secretly been glad to be exempted from the imminent drafts, and the thought of Robert facing similar horrors chilled me to the core.[paragraph break]As for Thomas, he was set to attend Eton just as I had. Poirot was outwardly supportive, but it was plain to me that he was actually very upset by the prospect; I suspected a combination of his mother-hen tendencies and his desire to take Thomas into his personal tutelage. I could hardly condemn his feeling[unicode 8212]the thought of separating the family even temporarily after we had suffered such a devastating loss put a significant damper on my own feelings of excitement and fatherly pride. Besides, the idea of having one of the world's finest minds bent to my son's education and training held a strong appeal. In the end, war broke out before the next school year, which cemented our decision to hold Thomas back after all.".
@@ -1041,13 +1034,28 @@ Part 4 - Actors and Misc
 [* I created all of the above divisions early on and then ended up not really knowing how best to use them. Oops!]
 
 
+Before asking someone (called the interlocutor) about the topic understood, say "I considered asking [the interlocutor] about the [the topic understood], but felt it might be best to wait for a more opportune time.[first time][line break][italic type][bracket]Note: ASK and TELL are not supported at the moment, but TALK TO (abbreviated TALK or T) may be used to speak to people.[close bracket][roman type][only][line break]" instead.
+
+Before telling someone (called the interlocutor) about the topic understood, say "I considered telling [the interlocutor] about [the topic understood], but felt it might be best to wait for a more opportune time.[first time][line break][italic type][bracket]Note: ASK and TELL are not supported at the moment, but TALK TO (abbreviated TALK or T) may be used to speak to people.[close bracket][roman type][only][line break]" instead.
+
+Before asking someone (called the interlocutor) for something (called the blah), say "I considered asking [the interlocutor] for [the blah], but felt it might be best to wait for a more opportune time.[first time][line break][italic type][bracket]Note: ASK and TELL are not supported at the moment, but TALK TO (abbreviated TALK or T) may be used to speak to people.[close bracket][roman type][only][line break]" instead.
+
+Before answering someone (called the interlocutor) that something:
+	if the interlocutor is Hercule Poirot:
+		if the clue is not seen:
+			say "I had not progressed far enough in my search to begin preparing an answer to Poirot's mystery." instead;
+		if the clue is seen:
+			try talking to Hercule Poirot instead;
+	otherwise:
+		say "There was no question for me to answer." instead.
+
 The Familiar Count is a number that varies.
 	
 Before reading the familiar book:
 	increase the Familiar Count by 1;
 	if the Familiar Count is at least 11:
 		say "Tempting as it was to continue reading, I decided I should take a break and go about my business." instead;
-	say "[if Thomas Hastings is eveninged]I read over Thomas's shoulder.[else][one of]I picked up the book and flipped through the pages, settling on an excerpt to read.[or]Picking up the book once more, I flipped through the pages and settled on an excerpt to read.[stopping][end if][line break][italic type]";
+	say "[if Thomas Hastings is eveninged]I read over Thomas's shoulder as he flipped through the pages.[else][one of]I picked up the book and flipped through the pages, settling on an excerpt to read.[or]Picking up the book once more, I flipped through the pages and settled on an excerpt to read.[stopping][end if][line break][italic type]";
 	if the Familiar Count is 1:
 		say "I had landed in France two days before, transacted some necessary business, and was now en route for London. I should be there some months[unicode 8212]time enough to look up old friends, and one old friend in particular. A little man with an egg-shaped head and hazel eyes[unicode 8212]Hercule Poirot! I proposed to take him completely by surprise. My last letter from the Argentine had given no hint of my intended voyage[unicode 8212]indeed, that had been decided upon hurriedly as a result of certain business complications[unicode 8212]and I spent many amused moments picturing to myself his delight and stupefaction on beholding me.[roman type]
 
@@ -1378,7 +1386,7 @@ Instead of examining yourself:
 		
 Crediting is an action applying to nothing. Understand "credit" and "credits" as crediting.
 Report crediting:
-	say "[italic type][bracket]The author can be contacted at arthur.hastings@post.com for any and all inquiries, comments or issues.[paragraph break]Special thanks go to these beta-readers, who generously gave of their time for testing and provided invaluable help: Jude, Franzi, Jirushi, legallyagraverobber, and two anonymous testers (display name to be determined).[line break]Additional thanks to these players, who kindly pointed out further issues and gave helpful feedback: Vivienne Dunstan, iaraya, Patrick Mooney, Tabitha, Rovarsson, Mike Russo, Andrew Schultz[paragraph break]Please note that this is not an officially licensed work[unicode 8212]it is a noncommercial transformative piece intended to fall under fair use and/or fair dealing. There are some direct quotes from the source material, which are identified as such and are mostly constrained to two specific items; they were copied from Project Gutenberg in the U.S. public domain. All credit otherwise goes to Agatha Christie, to the copyright holders, and to the people who did the phenomenal work of translating Christie's masterful prose into official adaptations (with special mention to the television series [roman type]Agatha Christie's Poirot[italic type]).[line break]A list of sources, attributions, references and inspirations can be found at thelittlefour.blog .[close bracket][roman type][line break]".
+	say "[italic type][bracket]This story was written by Captain Arthur Hastings, O.B.E., with assistance from Allyson Gray. Please contact allyson_gray@hotmail.com or arthur.hastings@post.com for any and all inquiries, comments, or issues.[paragraph break]Many thanks to beta-readers Jude, Franzi, Jirushi, legallyagraverobber, and Alex Parker, who generously gave of their time for testing and provided invaluable help, as well as to Zed Lopez, whose excellent and thorough code review fuels the development of these post-competition releases.[paragraph break]Additional thanks to people who kindly pointed out further issues or gave helpful feedback, including: Vivienne Dunstan, iaraya, Patrick Mooney, Tabitha, Rovarsson, Mike Russo, EJ, Bruno Dias, dgtziea, Brett Witty, and Andrew Schultz. Much gratitude also goes to the interactive fiction community at large for providing truly exceptional tools and spaces.[paragraph break]Please note that this is not an officially licensed work[unicode 8212]it is a noncommercial transformative piece intended to fall under fair use and/or fair dealing. There are some direct quotes from the source material, which are identified as such and are mostly constrained to two specific objects; they were copied from Project Gutenberg in the U.S. public domain. All credit otherwise goes to Agatha Christie, to the copyright holders, and to the teams who performed the phenomenal work of translating Christie's masterful prose into official adaptations (with special mention to the television series [roman type]Agatha Christie's Poirot[italic type]).[line break]A list of sources, attributions, references and inspirations can be found at thelittlefour.blog .[close bracket][roman type][line break]".
 
 
 [Sneezing is an action applying to nothing. Understand "SNEEZE" as sneezing.
@@ -1386,15 +1394,15 @@ Coughing is an action applying to nothing. Understand "COUGH" as coughing. !!!]
 
 Abouting is an action applying to nothing. Understand "ABOUT" as abouting.
 Report abouting:
-	say "[italic type][bracket]There is no way to lose this game[unicode 8212]making mistakes may result in a slightly different path for the story, but will never put an end to it. There is a help guide available (which includes the building's floor plans as well as various hints and tips) on the IFComp site and in the downloadable folder. The bulk of the experience consists of LOOK-ing in rooms and EXAMINE-ing various things, but a small range of other actions can be attempted, most of them only useful or relevant in limited cases.[line break]You will not need more than these actions to reach the end of the story:[line break]- GO [bracket]in a direction[close bracket][line break]- EXAMINE (or X) [bracket]something or someone[close bracket][line break]- TALK TO (or T) [bracket]someone[close bracket][line break]- LOOK (or L) (for a description of the current room)[line break]- WEAR [bracket]something[close bracket][line break]- USE [bracket]something[close bracket][line break]- TAKE [bracket]something[close bracket][line break]- READ [bracket]something[close bracket][line break]You may type COMMANDS for a more complete list of accepted verbs, or HELP for more details regarding movement and interaction within the environment. The status bar at the top of the screen displays your current room and objective.[paragraph break]Nouns highlighted in [bold type]bold[italic type] are generally the more important ones, and can almost always be abbreviated to their first three letters for convenience. Every effort has been made to allow a variety of synonyms and interactions[unicode 8212]however, due to the hand-crafted nature of these lists, possibilities can sometimes slip through the cracks. As an additional note, due to the layout required for interacting with the interface, this story is best experienced on a larger screen such as a computer or a tablet, and may otherwise be a bit cramped. Sincerest apologies for any oddities or inconveniences![line break]The author can be contacted at arthur.hastings@post.com for any and all inquiries, comments or issues.[paragraph break]Special thanks go to these beta-readers, who generously gave of their time for testing and provided invaluable help: Jude, Franzi, Jirushi, legallyagraverobber, and two anonymous testers (display name to be determined).[line break]Additional thanks to these players, who kindly pointed out further issues and gave helpful feedback: Vivienne Dunstan, iaraya, Patrick Mooney, Tabitha, Rovarsson, Mike Russo, Andrew Schultz[paragraph break]Please note that this is not an officially licensed work[unicode 8212]it is a noncommercial transformative piece intended to fall under fair use and/or fair dealing. There are some direct quotes from the source material, which are identified as such and are mostly constrained to two specific items; they were copied from Project Gutenberg in the U.S. public domain. All credit otherwise goes to Agatha Christie, to the copyright holders, and to the people who did the phenomenal work of translating Christie's masterful prose into official adaptations (with special mention to the television series [roman type]Agatha Christie's Poirot[italic type]).[line break]A list of sources, attributions, references and inspirations can be found at thelittlefour.blog .[close bracket][roman type][line break]".
+	say "[italic type][bracket]Thisinteractive experience is centered on exploration and discovery. There is no way to lose[unicode 8212]making mistakes may result in a slightly different path for the story, but will never put an end to it. There is a help guide accessible from the home page, which includes the building's floor plans as well as various hints and tips. The bulk of the experience consists of LOOK-ing in rooms and EXAMINE-ing various things, but a small range of other actions can be attempted, most of them only useful or relevant in limited cases.[line break]You will not need more than these actions to reach the end of the story:[line break]- GO [bracket]in a direction[close bracket][line break]- EXAMINE (or X) [bracket]something or someone[close bracket][line break]- TALK TO (or T) [bracket]someone[close bracket][line break]- LOOK (or L) (for a description of the current room)[line break]- WEAR [bracket]something[close bracket][line break]- USE [bracket]something[close bracket][line break]- TAKE [bracket]something[close bracket][line break]- READ [bracket]something[close bracket][paragraph break]You may type COMMANDS for a more complete list of accepted verbs, HELP for more details regarding movement and interaction within the environment, or CREDITS for a list of the wonderful people whose contributions greatly helped to improve this work. The status bar at the top of the screen displays your current room and objective.[paragraph break]Nouns highlighted in [bold type]bold[italic type] are generally the most important ones, and can almost always be abbreviated to their first three letters for convenience. Every effort has been made to allow a variety of synonyms and interactions[unicode 8212]however, due to the hand-crafted nature of these lists, possibilities can sometimes slip through the cracks. Sincerest apologies for any oddities or inconveniences![line break]The author can be contacted at allyson_gray@hotmail.com for any and all inquiries, comments, or issues.[close bracket][roman type][line break]".
 
 Helping is an action applying to nothing. Understand "HELP", "H", "HINT", "HINTS", "INSTRUCTION", "direction", "directions" and "INSTRUCTIONS" as helping.
 
 Report helping:
-	say "[italic type][bracket]In this type of interactive story, a text parser is used to interact with your environment. You do not need to worry about winning or losing[unicode 8212]the narrative will continue to unfold regardless, only changing in small ways to respond to your choices. The story should normally proceed fairly smoothly, but if you feel stuck at any point, there is a help guide (which includes the building's floor plans) available on the IFComp site and in the downloadable folder.
+	say "[italic type][bracket]In this type of interactive story, a text parser is used to interact with your environment. You do not need to worry about winning or losing[unicode 8212]the narrative will continue to unfold regardless, only changing in small ways to respond to your choices. The story should normally proceed fairly smoothly, but if you feel stuck at any point, there is a help guide (which includes the building's floor plans) accessible from the home page.
 [line break][line break]The parser accepts simple commands which are typically composed of one verb and, when relevant, one noun.[line break]Common synonyms for nouns are usually accepted. Terms made up of multiple words can be abbreviated to a single word. Articles are optional[unicode 8212]you can PET THE DOG or simply PET DOG. Uppercase letters are used here for ease of reading, but inputs are not case-sensitive.
 [line break][line break]To move around, you can GO in any cardinal direction (NORTH, SOUTH, EAST, WEST) as well as UP and DOWN or INSIDE and OUTSIDE. Example: you can move northward by typing GO NORTH
-[line break][line break]The parser is designed to understand directions even without the use of GO, and every direction can also be abbreviated to a single initial letter (save for IN/OUT) for convenience's sake. Example: you can move southward by typing SOUTH or S[paragraph break]At any time, you can input LOOK (or L) to view the description of the room you are in. The status bar at the top of the screen will display some basic information about the current story state. Some other useful commands are EXAMINE (or X), TALK TO (or T), READ (or R), OPEN and CLOSE, INVENTORY (or I), and TAKE.[paragraph break]Examples of valid inputs with varying degrees of abbreviation: EXAMINE MYSELF, T POIROT (for talking to Poirot), R BOOK (for reading a book), OPEN DRA (for opening a drawer), X REF (for examining the refrigerator), L (for printing a new description of the current room).[paragraph break]The commands SAVE and RESTORE can be used to mark your progress; however, if you are playing directly on the IFComp website instead of playing a downloaded copy, please be warned that updates to the entry (for necessary bug fixes, etc.) may occur between different visits, which will unfortunately make the old save files incompatible. You are very welcome to contact the author at arthur.hastings@post.com if you need technical assistance or have any other questions.
+[line break][line break]The parser is designed to understand directions even without the use of GO, and every direction can also be abbreviated to a single initial letter (save for IN/OUT) for convenience's sake. Example: you can move southward by typing SOUTH or S[paragraph break]At any time, you can input LOOK (or L) to view the description of the room you are in. The status bar at the top of the screen will display some basic information about the current story state. Some other useful commands are EXAMINE (or X), TALK TO (or T), READ (or R), OPEN and CLOSE, INVENTORY (or I), and TAKE.[paragraph break]Examples of valid inputs with varying degrees of abbreviation: EXAMINE MYSELF, T POIROT (for talking to Poirot), R BOOK (for reading a book), OPEN DRA (for opening a drawer), X REF (for examining the refrigerator), L (for printing a new description of the current room). The commands SAVE and RESTORE can be used to mark your progress.[paragraph break]You are very welcome to contact allyson_gray@hotmail.com if you need technical assistance or have any other questions.
 [line break][line break]For more information about this particular work and the actions that are most relevant to it, you may use the ABOUT command. For a more complete list of available actions, type COMMANDS.[close bracket][roman type][line break]".
 
 
@@ -1411,7 +1419,7 @@ Before thinking:
 
 Commanding is an action applying to nothing. Understand "commands", "COMMAND", "verb" and "VERBS" as commanding.
 Carry out commanding:
-	say "[italic type][bracket]Here are most of the commands accepted by this game's parser; a majority are default commands of the Inform 7 system which have been repurposed for this story's context.[paragraph break]Note: Some actions have multiple synonymous commands (for example, the commands WEAR and DON both result in the same action), but only one option is listed for each. Many of these actions do not serve to advance the main events of the narrative and exist purely for creating atmosphere and entertainment (oftentimes resulting in an in-character 'failure' message).[paragraph break]Commands which have a story effect, listed roughly in order of their usefulness for advancing the central narrative and/or the number of different responses they can give:[line break]GO (in a direction), EXAMINE, LOOK (or L), TALK TO (or T), READ, DON and DOFF, TAKE and DROP, INVENTORY (or I), OPEN and CLOSE, EAT and DRINK, USE, KISS, SMELL, TASTE, TOUCH, PET, SWITCH (ON / OFF), LISTEN, THINK, WAVE, JUMP, WAIT, YES and NO (meant to be used when answering direct questions).[line break]There are also a handful of minor hidden commands which were added in purely for flavour and to catch some of the actions commonly attempted by players.[paragraph break]Meta-commands which provide a utility external to the story and exist only for the reader's convenience:[line break]SAVE and RESTORE, TRANSCRIPT (ON / OFF), RESTART, QUIT, VERSION, VERIFY, * (put an asterisk at the beginning of an input to mark it as a comment[unicode 8212]helpful if you are saving a transcript of your gameplay and wish to leave annotations).[line break]The UNDO command is also enabled, but may not work consistently due to technical problems[unicode 8212]a solution for this is still in the works, though thankfully it should never be necessary to undo actions in the course of this story.[paragraph break]Tip: If your keyboard has an 'up' arrow key, you can press it to fetch prior commands you have sent (helpful for quickly repeating the same command). The command AGAIN (or G) can also be used to repeat the most recent action.[close bracket][roman type][line break]".
+	say "[italic type][bracket]Here are most of the commands accepted by this game's parser; a majority are default commands of the Inform 7 system which have been repurposed for this story's context.[paragraph break]Note: Some actions have multiple synonymous commands (for example, the commands WEAR and DON both result in the same action), but only one option is listed for each. Many of these actions do not serve to advance the main events of the narrative and exist purely for creating atmosphere and entertainment (oftentimes resulting in an in-character 'failure' message).[paragraph break]Commands which have a story effect, listed roughly in order of their usefulness for advancing the central narrative and/or the number of different responses they can give:[line break]GO (in a direction), EXAMINE, LOOK (or L), TALK TO (or T), READ, DON and DOFF, TAKE and DROP, INVENTORY (or I), OPEN and CLOSE, EAT and DRINK, USE, KISS, SMELL, TASTE, TOUCH, PET, SWITCH (ON / OFF), LISTEN, THINK, WAVE, JUMP, WAIT, YES and NO (meant to be used when answering direct questions).[line break]There are also a handful of minor hidden commands which were added purely for flavour and to catch some of the actions commonly attempted by players.[paragraph break]Meta-commands which provide a utility external to the story and exist only for the reader's convenience:[line break]SAVE and RESTORE, TRANSCRIPT (ON / OFF), RESTART, QUIT, VERSION, VERIFY, * (put an asterisk at the beginning of an input to mark it as a comment[unicode 8212]helpful if you are saving a transcript of your gameplay and wish to leave annotations).[line break]The UNDO command is also enabled, but may not work consistently due to technical problems[unicode 8212]a solution for this is still in the works, though thankfully it should never be necessary to undo actions in the course of this story.[paragraph break]Tip: If your keyboard has an 'up' arrow key, you can press it to fetch prior commands you have sent (helpful for quickly repeating the same command). The command AGAIN (or G) can also be used to repeat the most recent action.[close bracket][roman type][line break]".
 	
 
 
@@ -1490,7 +1498,10 @@ Report talking to Miss Lemon:
 
 
 Report talking to Thomas Hastings:
-	say "He gave me a small smile. 'Hello, Father.'".
+	say "[if the bonjour is unseen]He gave me a small smile. 'Hello, Father.'[end if][if the bonjour is seen and Thomas Hastings is afternooned][one of]I turned to Thomas, eager to instruct him in the ways of detection—and secretly glad for this rare chance to claim the title of chief investigator, given my typical role as assistant to Poirot. He was already deeply absorbed in examining his surroundings, however, and appeared not to hear me. Upon witnessing his evident joy at having been entrusted with his very own mystery, I was happy to set my own ambitions aside and let him conduct his independent investigation.[or]Thomas was earnestly absorbed in his investigation, seemingly determined to prove himself by solving the case all on his own; I did not have the heart to disturb him.[stopping][end if][if Thomas Hastings is eveninged]He gave me a small smile. 'Hello, Father. I can't wait for dinner!'[end if]".
+
+Check showing something (called the fingerprint) to Thomas Hastings:
+	say "Thomas nodded seriously, and leant forward to examine [the fingerprint] through a small magnifying-glass he had somehow produced.".
 	
 
 Report talking to Grace Hastings:
@@ -1764,7 +1775,9 @@ Understand the commands “wake”, “awake” and “awaken” as something ne
 Understand the commands “burn” and “light” as something new.
 Understand the command “notify” as something new.
 Understand the command “score” as something new.
-Understand the commands “answer”, “say”, “shout”, “tell” and “ask” as something new.
+
+
+[Understand the commands “answer”, “say”, “shout”, “tell” and “ask” as something new.]
 
 [Understand the commands “put”, “insert”, “drop”, “throw” and “discard” as something new.]
 
@@ -1905,6 +1918,9 @@ Before opening the p refrigerator:
 
 Before opening the h refrigerator:
 	say "I had no need to look inside the refrigerator at the moment[unicode 8212]better not waste energy." instead.
+
+Before opening the writing desk:
+	say "My writing desk was of a rather plain variety, with no drawers or other moving parts." instead.
 
 Report hugging:
 	say "I should not go about embracing things indiscriminately.".
@@ -2219,9 +2235,9 @@ Before wearing the necktie:
 
 The restore the game rule response (B) is "[italic type][bracket]The save file was successfully restored![close bracket][roman type][paragraph break][RestoreRoom]".
 
-The restore the game rule response (A) is "[italic type][bracket]The save file could not be restored successfully.[line break]If you are playing online, this is likely due to a story update causing your save file to become incompatible. Sincere apologies for the inconvenience![line break]If this save data was important to you, please feel free to contact the author at arthur.hastings@post.com ; there is a chance your game state could be recovered (if online) or otherwise replicated.[close bracket][roman type][line break]".
+The restore the game rule response (A) is "[italic type][bracket]The save file could not be restored successfully.[line break]If you are playing online, this could be due to your browser storage being cleared. An update in the story file can also cause saves to become incompatible.[line break]Please feel free to contact allyson_gray@hotmail.com if you need to recover any lost progress![close bracket][roman type][line break]".
 
-The save the game rule response (B) is "[italic type][bracket]A save file was successfully created.[line break]Please note that save files stored on the IFComp website could potentially disappear between visits[unicode 8212]for any questions, or to attempt recovery of lost data, please contact the author at arthur.hastings@post.com [close bracket][roman type][paragraph break]".
+The save the game rule response (B) is "[italic type][bracket]A save file was successfully created.[line break]Please note that save files stored in the browser can potentially disappear between visits[unicode 8212]for any questions, or to attempt recovery of lost data, please contact allyson_gray@hotmail.com .[close bracket][roman type][paragraph break]".
 
 The save the game rule response (A) is "[italic type][bracket]The saving operation was cancelled.[close bracket][roman type][paragraph break]".
 
@@ -2593,7 +2609,7 @@ The list continued on, but I figured I ought to contain my nosiness and leave he
 		say "[if the spectacles is unseen]I held the bottle at arm's length for some frustrating moments before finally giving in and taking out my spectacles.[paragraph break][end if][italic type]REVIVIT.[unicode 8212]To bring back the natural tone of the hair. REVIVIT is NOT a dye. In five shades, Ash, Chestnut, Titian, Brown, Black.[roman type]";
 		now the spectacles is seen instead;
 	if the noun is the wrist-watch:
-		say "Still plenty of time." instead;
+		say "[if Hercule Poirot is eveninged]A glance at my wrist-watch confirmed that it was time to turn in for the night.[otherwise]Still plenty of time.[end if]" instead;
 	if the noun is the newspaper:
 		say "I took a moment to flip through the newspaper, perusing sports news and various other articles. My stocks were doing well[unicode 8212]for once[unicode 8212]and there was discussion of crimes of the kind Poirot and I had often taken an interest in." instead;
 	if the noun is the shorthand pad:
@@ -2639,7 +2655,7 @@ Before eating something:
 	if the noun is the mixing bowl:
 		say "I dipped a finger into the bowl and had a taste of the delicious sauce, ignoring Poirot's look of fond exasperation." instead;
 	otherwise:
-		say "That was not something I could consume." instead.
+		say "That was not something I could eat." instead.
 		
 
 
@@ -2796,7 +2812,7 @@ The describe room gone into rule response (D) is "[if the actor is Thomas Hastin
 
 The describe room gone into rule response (E) is "[if the actor is Thomas Hastings]Thomas came up behind me[end if][if the actor is Bob and Bob is leashed][dynamic name of Bob] stood by me on his leash, [one of]furiously wagging his tail[or]sniffing the air curiously[or]patiently waiting for us to move on[cycling][end if]"
 
-The describe room gone into rule response (F) is "[if the actor is Thomas Hastings]Thomas had followed me into the room and was [one of]inspecting his surroundings very closely[or]fiddling with a small magnifying-glass[or]affecting an air of deep concentration[or]quietly humming to himself[or]taking a moment to relax, standing with his hands in his pockets[or]absorbed in contemplation of familiar objects[or]arranging his clothing with surprising meticulousness[then at random][end if][if the actor is Bob and Bob is leashed][dynamic name of Bob] stood by me on his leash, [one of]furiously wagging his tail[or]sniffing the air curiously[or]patiently waiting for us to move on[cycling][end if][if the actor is Bob and Bob is excited][one of][dynamic name of Bob] bounded after me with a joyous bark[or][dynamic name of Bob] energetically followed me into the room and fixed me with a pleading look[or][dynamic name of Bob] caught up to me and attempted to push his [dynamic name of the leash] into my hand with a plaintive whine[stopping][end if]"
+The describe room gone into rule response (F) is "[if the actor is Thomas Hastings]Thomas had followed me into the room and was [one of]inspecting his surroundings very closely[or]affecting an air of deep concentration[or]quietly humming to himself[or]taking a moment to relax, standing with his hands in his pockets[or]absorbed in contemplation of familiar objects[or]arranging his clothing with surprising meticulousness[then at random][end if][if the actor is Bob and Bob is leashed][dynamic name of Bob] stood by me on his leash, [one of]furiously wagging his tail[or]sniffing the air curiously[or]patiently waiting for us to move on[cycling][end if][if the actor is Bob and Bob is excited][one of][dynamic name of Bob] bounded after me with a joyous bark[or][dynamic name of Bob] energetically followed me into the room and fixed me with a pleading look[or][dynamic name of Bob] caught up to me and attempted to push his [dynamic name of the leash] into my hand with a plaintive whine[stopping][end if]"
 
 [To say NotDo:
 	do nothing.]
@@ -3498,32 +3514,32 @@ Before going from Poirot Hallway End to Poirot Study:
 	if Thomas Hastings is afternooned and the bonjour is unseen:
 		say "     I gave the door frame a few polite knocks as I stepped into Poirot's study, and he looked up from his desk with a warm smile. 'Hastings! Good afternoon, [italic type]mon ami[roman type]! You are looking well.'
 [line break][line break]
-     I had no time to respond before Thomas made his presence known, slipping past me to greet Poirot cheerily. '[italic type]Bonjour, oncle Hercule![roman type]'
+	 I had no time to respond before Thomas made his presence known, slipping past me to greet Poirot cheerily. '[italic type]Bonjour, oncle Hercule![roman type]'
 [line break][line break]
-     Poirot gave a delighted little cry. 'Ah! If it is not the young master Thomas! [italic type]Bonjour, mon garçon![roman type] How are you on this fine day?'
+	 Poirot gave a delighted little cry. 'Ah! If it is not the young master Thomas! [italic type]Bonjour, mon garçon![roman type] How are you on this fine day?'
 [line break][line break]
-     Thomas laughed. 'I'd hardly call it fine, Uncle Hercule! Haven't you seen the weather?'
+	 Thomas laughed. 'I'd hardly call it fine, Uncle Hercule! Haven't you seen the weather?'
 [line break][line break]
-     Poirot spun towards the window with an exaggerated air of surprise. '[italic type]Mon Dieu[roman type], but you are right! It is raining the ropes!'
-     They exchanged jocular smiles.
+	 Poirot spun towards the window with an exaggerated air of surprise. '[italic type]Mon Dieu[roman type], but you are right! It is raining the ropes!'
+	 They exchanged jocular smiles.
 [line break][line break]
-     'Well, actually,' I interjected, 'that's rather the problem! Tommy here is complaining of boredom, and there's only so much to be done while cooped up indoors...'
+	 'Well, actually,' I interjected, 'that's rather the problem! Tommy here is complaining of boredom, and there's only so much to be done while cooped up indoors...'
 [line break][line break]
-     Poirot affected an appraising look. 'Indeed? And pray tell, [italic type]jeune homme[roman type], have you already finished your schoolwork?'
+	 Poirot affected an appraising look. 'Indeed? And pray tell, [italic type]jeune homme[roman type], have you already finished your schoolwork?'
 [line break]I was glad to hear him ask the question which should have occurred to me earlier[unicode 8212]but had not.
 [line break][line break]
-     Thomas beamed proudly. '[italic type]Oui, j'ai fait tous mes devoirs![roman type]' His French was improving at a frightening pace.
+	 Thomas beamed proudly. '[italic type]Oui, j'ai fait tous mes devoirs![roman type]' His French was improving at a frightening pace.
 [line break][line break]
-     Poirot hummed in approval and tented his fingers. '[italic type]Excellent![roman type] Then we must find another way to occupy these little grey cells of yours, [italic type]hein[roman type]? Allow me to think for one moment...'
+	 Poirot hummed in approval and tented his fingers. '[italic type]Excellent![roman type] Then we must find another way to occupy these little grey cells of yours, [italic type]hein[roman type]? Allow me to think for one moment...'
 Thomas and I shared an anticipatory glance.[line break]          >>>[command prompt]";
 		wait for any key;
 		say "[paragraph break]     Before long, my friend's eyes were twinkling as he rose from his chair and began to pace the room. 'There is one thing I can propose[unicode 8212]a case, if you both are willing to play the detectives. If you search my apartment, you will find one object which has been disturbed, with ample evidence to deduce the culprit. I would like you to investigate and try to arrive at the correct answer.'
 [line break][line break]
-     Thomas looked to me, wordlessly seeking permission, and I could not resist tousling his hair affectionately. 'Well, young man, it sounds like we have our work cut out for us!' [line break]Seeing the boy's face light up with excitement, Poirot and I had a hearty chuckle. As Poirot delivered the last of his instructions, he ran a hand over the crown of Thomas's head, gently brushing the disarrayed strands back into place.
+	 Thomas looked to me, wordlessly seeking permission, and I could not resist tousling his hair affectionately. 'Well, young man, it sounds like we have our work cut out for us!' [line break]Seeing the boy's face light up with excitement, Poirot and I had a hearty chuckle. As Poirot delivered the last of his instructions, he ran a hand over the crown of Thomas's head, gently brushing the disarrayed strands back into place.
 [line break][line break]
-     'You have until dinner-time to bring me your answers. I will start the preparations right away, I think[unicode 8212]the [italic type]pot-au-feu[roman type] will take a long time to cook. Perhaps we can all go promenade ourselves to-night, if these so deplorable conditions pass as the good weathermen predict?'
+	 'You have until dinner-time to bring me your answers. I will commence the preparations right away, I think[unicode 8212]the [italic type]pot-au-feu[roman type] will take a long time to cook. Perhaps we can all go promenade ourselves to-night, if these so deplorable conditions pass as the good weathermen predict?'
 [line break][line break]
-     We gaily answered in the affirmative, and Poirot left us in his study with a final [italic type]bonne chance[roman type].[line break]          >>>[command prompt]";
+	 We gaily answered in the affirmative, and Poirot left us in his study with a final [italic type]bonne chance[roman type].[line break]          >>>[command prompt]";
 		wait for any key;
 		now the bonjour is seen;
 		now the mixing bowl is in Poirot Kitchen;
@@ -3547,33 +3563,33 @@ Before going from Poirot Hallway Mid to Poirot Dining Room:
 	if Thomas Hastings is afternooned and the bonjour is unseen:
 		say "     I gave the door frame a few polite knocks as I stepped into the dining room to reach Poirot's study, and he looked up from his desk with a warm smile. 'Hastings! Good afternoon, [italic type]mon ami[roman type]! You are looking well.'
 [line break][line break]
-     I had no time to respond before Thomas made his presence known, slipping past me to greet Poirot cheerily. '[italic type]Bonjour, oncle Hercule![roman type]'
+	 I had no time to respond before Thomas made his presence known, slipping past me to greet Poirot cheerily. '[italic type]Bonjour, oncle Hercule![roman type]'
 [line break][line break]
-     Poirot gave a delighted little cry. 'Ah! If it is not the young master Thomas! [italic type]Bonjour, mon garçon![roman type] How are you on this fine day?'
+	 Poirot gave a delighted little cry. 'Ah! If it is not the young master Thomas! [italic type]Bonjour, mon garçon![roman type] How are you on this fine day?'
 [line break][line break]
-     Thomas laughed. 'I'd hardly call it fine, Uncle Hercule! Haven't you seen the weather?'
+	 Thomas laughed. 'I'd hardly call it fine, Uncle Hercule! Haven't you seen the weather?'
 [line break][line break]
-     Poirot spun towards the window with an exaggerated air of surprise. '[italic type]Mon Dieu[roman type], but you are right! It is raining the ropes!'
-     They exchanged jocular smiles.
+	 Poirot spun towards the window with an exaggerated air of surprise. '[italic type]Mon Dieu[roman type], but you are right! It is raining the ropes!'
+	 They exchanged jocular smiles.
 [line break][line break]
-     'Well, actually,' I interjected, 'that's rather the problem! Tommy here is complaining of boredom, and there's only so much to be done while cooped up indoors...'
+	 'Well, actually,' I interjected, 'that's rather the problem! Tommy here is complaining of boredom, and there's only so much to be done while cooped up indoors...'
 [line break][line break]
-     Poirot affected an appraising look. 'Indeed? And pray tell, [italic type]jeune homme[roman type], have you already finished your schoolwork?'
+	 Poirot affected an appraising look. 'Indeed? And pray tell, [italic type]jeune homme[roman type], have you already finished your schoolwork?'
 [line break]I was glad to hear him ask the question which should have occurred to me earlier[unicode 8212]but had not.
 [line break][line break]
-     Thomas beamed proudly. '[italic type]Oui, j'ai fait tous mes devoirs![roman type]' His French was improving at a frightening pace.
+	 Thomas beamed proudly. '[italic type]Oui, j'ai fait tous mes devoirs![roman type]' His French was improving at a frightening pace.
 [line break][line break]
-     Poirot hummed in approval and tented his fingers. '[italic type]Excellent![roman type] Then we must find another way to occupy these little grey cells of yours, [italic type]hein[roman type]? Allow me to think for one moment...'
+	 Poirot hummed in approval and tented his fingers. '[italic type]Excellent![roman type] Then we must find another way to occupy these little grey cells of yours, [italic type]hein[roman type]? Allow me to think for one moment...'
 Thomas and I shared an anticipatory glance.[line break]          >>>[command prompt]";
 		wait for any key;
 		say "[paragraph break]     Before long, my friend's eyes were twinkling as he rose from his chair and began to pace the room. 'There is one thing I can propose[unicode 8212]a case, if you both are willing to play the detectives. If you search my apartment, you will find one object which has been disturbed, with ample evidence to deduce the culprit. I would like you to investigate and try to arrive at the correct answer.'
 [line break][line break]
-     Thomas looked to me, wordlessly seeking permission, and I could not resist tousling his hair affectionately. 'Well, young man, it sounds like we have our work cut out for us!'
+	 Thomas looked to me, wordlessly seeking permission, and I could not resist tousling his hair affectionately. 'Well, young man, it sounds like we have our work cut out for us!'
 Seeing the boy's face light up with excitement, Poirot and I had a hearty chuckle. As Poirot delivered the last of his instructions, he ran a hand over the crown of Thomas's head, gently brushing the disarrayed strands back into place.
 [line break][line break]
-     'You have until dinner-time to bring me your answers. I will start the preparations right away, I think[unicode 8212]the [italic type]pot-au-feu[roman type] will take a long time to cook. Perhaps we can all go promenade ourselves to-night, if these so deplorable conditions pass as the good weathermen predict?'
+	 'You have until dinner-time to bring me your answers. I will commence the preparations right away, I think[unicode 8212]the [italic type]pot-au-feu[roman type] will take a long time to cook. Perhaps we can all go promenade ourselves to-night, if these so deplorable conditions pass as the good weathermen predict?'
 [line break][line break]
-     We gaily answered in the affirmative, and Poirot left us in his study with a final [italic type]bonne chance[roman type].[line break]          >>>[command prompt]";
+	 We gaily answered in the affirmative, and Poirot left us in his study with a final [italic type]bonne chance[roman type].[line break]          >>>[command prompt]";
 		wait for any key;
 		now the bonjour is seen;
 		now the mixing bowl is in Poirot Kitchen;
