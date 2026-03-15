@@ -1433,7 +1433,7 @@ Carry out singing:
 
 Petting is an action applying to one thing. Understand "PET [something]" and "PAT [something]" and "STROKE [something]" as petting.
 Carry out petting Hercule Poirot:
-	say "Catlike as he may be, petting poirot would not be appropriate!".
+	say "Catlike as he may be, petting Poirot would not be appropriate!".
 	
 Carry out petting yourself:
 	say "I gaves my clothes a little pat.".
