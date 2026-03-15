@@ -377,7 +377,6 @@ The description of the p closet is "The closet currently housed the warmer winte
 
 Understand "winter clothes" as the p closet.
 
-[* I'll try to put all the "Understand" phrases together once I understand better how I should order things!]
 
 The description of the p stand is "Aside from our overcoats, the stand bore a small assortment of hats. Poirot was fond of bowler and homburg hats[unicode 8212]I favoured fedoras, and had brought multiple Stetsons back from the Americas. Also of note were Poirot's many mufflers, which he was wont to wrap himself in at the first sign of chill.".
 
@@ -571,7 +570,6 @@ The description of the p wireless is "[if Hercule Poirot is in Poirot Bedroom]Th
 Check listening to the h wireless:
 	say "The wireless was providing some pleasant background noise." instead.
 
-[* I tried using "Check" here instead of relying on "Instead" - hopefully I'm using it correctly!]
 	
 Check listening to the p wireless:
 	say "[if Hercule Poirot is in Poirot Bedroom]The wireless had been switched off for the night[else]I listened with scepticism to the weatherman predicting beautiful weather to-night[end if]." instead.
@@ -663,8 +661,6 @@ To say MackLeash:
 To say MackSat:
 	now the mackintosh is satisfied.
 
-[*** I only learned about this trick very late in development; it seems so unbelievably convenient!! I'll try to use it a lot more going forward (unless that's not recommended for whatever reason?)]
-
 The h closet is a thing in Hastings Entrance. Understand "closet", "small closet", and "small" as the closet.
 The h stand is a thing in Hastings Entrance with the printed name "coats and hats". Understand "coat rack", "rack", "hat stand", "stand", "hat", "hats", "coats", "coat stand", and "coat" as the h stand.
 The h door is a thing in Hastings Entrance. Understand "door", "front door", and "entrance door" as the h door.
@@ -740,8 +736,6 @@ Hastings Dining Room is a room with the printed name "Dining Room (The Hastings'
 Hastings Dining Room is west of Hastings Hallway Mid.
 The bowls is a thing in Hastings Dining Room. Understand "bowls" and "bowl" and "food bowl" and "water bowl" and "food and water" and "food and water bowls" and "food" and "water" as the bowls.
 The h table is a thing in Hastings Dining Room. Understand "table" and "dining" and "dining table" and "chair" and "chairs" as the h table.
-
-[*** I'm struggling to figure out how to format these long series of conditionals in a readable way (but without creating extra line breaks in-game!)]
 
 The children is a person in Hastings Dining Room. Understand "children" and "kids" as the children. The children is ambiguously plural.
 
@@ -1461,11 +1455,8 @@ Understand "taste" as a mistake ("I could only do that to something specific.").
 Understand "play" as a mistake ("Though I was in a playful mood, I decided to focus on the task at hand.").
 Understand "eat" as a mistake ("I could only do that to something specific.").
 
-[*** I added these in because the parser would get stuck in a horrible loop if the player entered certain verbs without specifying a noun (the parser would ask for clarification but not accept any answer, repeating the question endlessly until the player moves out of the room)!]
-
 Understand "hug" as a mistake ("I wrapped my arms around myself, feeling slightly chilled.").
 
-[* The hug line doesn't work for some reason!]
 
 Understand "search" as a mistake ("I could only do that to something specific.").
 Understand "love" and "fuck" and "bed" and "make love to" and "bugger" as a mistake ("A vague feeling of amorousness washed over me.").
@@ -1545,7 +1536,7 @@ Check dropping the spectacles:
 Before taking the gramophone:
 	say "[if Hercule Poirot is in Poirot Kitchen]I contemplated putting on a record, but opted against it[unicode 8212]better to wait until after supper when Poirot and I could enjoy it together[else]Putting on a record would probably wake Poirot; I preferred not to risk it[end if]." instead;
 
-[* I defined TAKE and USE as synonyms to ensure players never get stuck making coffee, which is why I'm using "taking" a lot here...]
+
 
 
 Before taking the television:
@@ -1559,7 +1550,7 @@ Before taking the p wireless, try FakeListening the p wireless instead.
 Before taking the h wireless, try FakeListening the h wireless instead.
 Before taking the television, try FakeListening the television instead.
 
-[* I just realized there's some redundancy in these last few blocks of code as well as the upcoming ones! I'll trim things down so there's only one description for each. (All the device interactions were written in a rush, so I was just trying to get it to work ASAP and throwing things at the wall...)]
+
 
 Before playing the gramophone, try FakeListening the gramophone instead.
 
@@ -1617,7 +1608,7 @@ Before putting something on something:
 [* To be finished later; meant to fix an issue with the player repeating PUT LEASH ON BOB]
 	
 
-[* Some longer comment blocks in this second half of the code, which I used as a reference to help catch as many of the standard verbs and error messages as I could, though I wasn't able to be very thorough in the end due to time constraints]
+[* Some longer comment blocks in this second half of the code, which I used as a reference to help catch as many of the standard verbs and error messages as I could, though I wasn't able to be as thorough as I hoped]
 
 [2. Standard actions concerning the actor's possessions
 Taking inventory
@@ -1811,8 +1802,6 @@ Reading is an action applying to one thing. Understand "read [something]" and "r
 
 After reading a command when the player's command matches "take all" or the player's command matches "get all":
 	say "[line break]No point in encumbering myself with unnecessary items." instead.
-
-[*** I wasn't sure if there was a better way to block the player from using the ALL noun!]
 	
 [After reading a command when the player's command matches "[command] all" and the player is wearing the necktie:
 	say "[line break]I began to unfasten my necktie, then thought better of it.";
@@ -2142,7 +2131,7 @@ The description of the pullover is "A patterned red-and-beige pullover; an old f
 The mackintosh is a backdrop. Understand "mackintosh", "coat", "mack" and "mac" as the mackintosh. The mackintosh is everywhere.
 The umbrella is a backdrop. Understand "umb", "umbrella" and "brella" as the umbrella. The umbrella is everywhere.
 
-[* I wanted the mackintosh, umbrella and pullover to be examinable everywhere, but didn't know how to hide them from the player's inventory, so they became backdrops...]
+
 
 The description of the mackintosh is "A coat I liked to keep in my flat for walks like these.".
 The description of the umbrella is "A plain black umbrella; essential on days like to-day.".
@@ -2347,8 +2336,6 @@ Before going north in Floor 3 Hall:
 Before going inside in Floor 3 Hall:
 	if Bob is leashed, say "While Bob and Poirot got along splendidly, Poirot is very particular about keeping his space clean[unicode 8212]even a well-groomed and well-behaved dog would inevitably shed all over his belongings." instead.
 
-[*** I wasn't sure if there was a better way to accomplish this (letting the player use either NORTH or INSIDE to enter)! It worked well as far as I can tell, but it was a pain to have to duplicate every interaction like this]
-
 After reading a command, say "[conditional paragraph break]".
 
 Rule for implicitly taking something (called target):
@@ -2367,8 +2354,6 @@ Before going south in Poirot Entrance:
 
 [Understand "bob" and "bob's ball" as the ball if Bob is not visible.]
 
-[*** I've heard there's a way to accomplish something like this, I think I just don't have the right syntax yet (the goal was to avoid disambiguation problems when Bob himself is around)]
-
 After reading a command:
 	if the player's command matches "x" or the player's command matches "examine":
 		try looking instead;
@@ -2381,14 +2366,12 @@ After reading a command:
 			try reading the familiar book instead;
 		otherwise:
 			say "I could only do that to something with text." instead.
-
-[*** Is this considered an OK way to catch and redirect nounless verbs?]
 			
 
 Before opening the familiar book:
 	try reading the familiar book instead.
 
-[* I'm realizing now that I should probably have created a property for readable objects, and redirected them from OPEN to READ as a group instead of doing it like this! I'll try to plan out that kind of thing going forward]
+
 
 After reading a command:
 	if the player's command matches "put leash on bob" or the player's command matches "put leash on dog":
@@ -2702,8 +2685,6 @@ After going from Hastings Hallway End to Hastings Study:
 	now the Monopoly is satisfied;
 	continue the action.
 
-[*** I think I've been using "continue the action" a bit haphazardly; I'm not sure what the best practice is]
-
 Carry out talking to the housekeeper:
 	if the housekeeper is excited:
 		say "Miss Pearson wished me good morning as she worked.";
@@ -2773,7 +2754,7 @@ Instead of going south in Hastings Entrance:
 Instead of going north in Floor 2 Hall:
 	now the player is in Hastings Entrance.
 
-[* Once again, the issue of wanting to access a room from two different directions! I didn't want the N and S connections to appear in the status bar or the "invalid direction" message which lists current exits (since they would have been redundant and potentially confusing), I just wanted them to be quietly available in case players prefer them to IN/OUT]
+
 
 Instead of going north in Lemon Office:
 	say "I tried not to make a habit of climbing through windows[unicode 8212]except whenever Poirot and I needed to infiltrate a suspect's dwelling.".
@@ -3029,7 +3010,6 @@ Instead of going nowhere:
   if the number of entries in dlist is 1, say "This room's only exit is [entry 1 in dlist].";
   else say "This room's exits are [dlist].".
 
-[*** I'm not sure how to check how many directions there are so that I can automatically adjust the singular/plural of "exits"! I considered making a separate singular version of the message for every room which I know has only one exit, but I wonder if there's a better way.]
 	
 To say exit list:
 	let place be location;
@@ -3556,7 +3536,6 @@ Thomas and I shared an anticipatory glance.[line break]          >>>[command pro
 	if Thomas Hastings is morninged and the bonjour is unseen:
 		say "I could hear Poirot talking on the telephone[unicode 8212]better not to disturb him." instead.
 		  
-[*** Maybe I should use "scenes" for these kinds of big transition?]
 
 
 Before going from Poirot Hallway Mid to Poirot Dining Room:
